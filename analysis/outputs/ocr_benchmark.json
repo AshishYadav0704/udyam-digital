@@ -1,0 +1,498 @@
+{
+ "summary": {
+  "tesseract_raw": {
+   "field_accuracy": 0.9664429530201343,
+   "fields_scored": 149,
+   "type_classification_accuracy": 1.0,
+   "seconds_per_doc": 0.3741933729337609,
+   "identifier_accuracy": 0.9347826086956522,
+   "by_field": {
+    "gstin": "8/11",
+    "legal_name": "10/11",
+    "trade_name": "10/11",
+    "date_of_liability": "11/11",
+    "udyam_number": "11/11",
+    "enterprise_name": "11/11",
+    "state": "11/11",
+    "consumer_no": "12/12",
+    "billed_to": "12/12",
+    "bill_date": "12/12",
+    "name": "12/12",
+    "id_no": "12/12",
+    "valid_till": "12/12"
+   }
+  },
+  "tesseract_clean": {
+   "field_accuracy": 0.9664429530201343,
+   "fields_scored": 149,
+   "type_classification_accuracy": 1.0,
+   "seconds_per_doc": 0.3545036419578221,
+   "identifier_accuracy": 0.9347826086956522,
+   "by_field": {
+    "gstin": "8/11",
+    "legal_name": "10/11",
+    "trade_name": "10/11",
+    "date_of_liability": "11/11",
+    "udyam_number": "11/11",
+    "enterprise_name": "11/11",
+    "state": "11/11",
+    "consumer_no": "12/12",
+    "billed_to": "12/12",
+    "bill_date": "12/12",
+    "name": "12/12",
+    "id_no": "12/12",
+    "valid_till": "12/12"
+   }
+  },
+  "ppocr_onnx_raw": {
+   "field_accuracy": 0.6912751677852349,
+   "fields_scored": 149,
+   "type_classification_accuracy": 1.0,
+   "seconds_per_doc": 2.115878006686335,
+   "identifier_accuracy": 0.2826086956521739,
+   "by_field": {
+    "gstin": "0/11",
+    "legal_name": "10/11",
+    "trade_name": "0/11",
+    "date_of_liability": "10/11",
+    "udyam_number": "1/11",
+    "enterprise_name": "11/11",
+    "state": "11/11",
+    "consumer_no": "0/12",
+    "billed_to": "12/12",
+    "bill_date": "12/12",
+    "name": "12/12",
+    "id_no": "12/12",
+    "valid_till": "12/12"
+   }
+  },
+  "ppocr_onnx_clean": {
+   "field_accuracy": 0.9731543624161074,
+   "fields_scored": 149,
+   "type_classification_accuracy": 1.0,
+   "seconds_per_doc": 1.6825499741927437,
+   "identifier_accuracy": 0.9782608695652174,
+   "by_field": {
+    "gstin": "10/11",
+    "legal_name": "10/11",
+    "trade_name": "10/11",
+    "date_of_liability": "10/11",
+    "udyam_number": "11/11",
+    "enterprise_name": "11/11",
+    "state": "11/11",
+    "consumer_no": "12/12",
+    "billed_to": "12/12",
+    "bill_date": "12/12",
+    "name": "12/12",
+    "id_no": "12/12",
+    "valid_till": "12/12"
+   }
+  },
+  "pipeline": {
+   "field_accuracy": 0.9865771812080537,
+   "fields_scored": 149,
+   "type_classification_accuracy": 1.0,
+   "seconds_per_doc": 1.2365422197010205,
+   "identifier_accuracy": 0.9782608695652174,
+   "by_field": {
+    "gstin": "10/11",
+    "legal_name": "10/11",
+    "trade_name": "11/11",
+    "date_of_liability": "11/11",
+    "udyam_number": "11/11",
+    "enterprise_name": "11/11",
+    "state": "11/11",
+    "consumer_no": "12/12",
+    "billed_to": "12/12",
+    "bill_date": "12/12",
+    "name": "12/12",
+    "id_no": "12/12",
+    "valid_till": "12/12"
+   }
+  }
+ },
+ "errors": {
+  "tesseract_raw": [
+   {
+    "doc": "K01_gst_certificate",
+    "field": "gstin",
+    "expected": "37IHKXV5167L1ZS",
+    "got": "37THKXV5167L1ZS"
+   },
+   {
+    "doc": "K02_gst_certificate",
+    "field": "gstin",
+    "expected": "19EOGXH4115Y1ZL",
+    "got": "19E06KHAII5Y17"
+   },
+   {
+    "doc": "K02_gst_certificate",
+    "field": "legal_name",
+    "expected": "Joseph Shah (Prop. Harmony Dental Care)",
+    "got": "Joseph Shah (Prop, Harmony Dentas Care)"
+   },
+   {
+    "doc": "K02_gst_certificate",
+    "field": "trade_name",
+    "expected": "Harmony Dental Care",
+    "got": "Harmony Dentaj Care"
+   },
+   {
+    "doc": "K10_gst_certificate",
+    "field": "gstin",
+    "expected": "27QHJXK0658U1ZL",
+    "got": "27QHIXK0658U1ZL"
+   }
+  ],
+  "ppocr_onnx_raw": [
+   {
+    "doc": "K01_gst_certificate",
+    "field": "gstin",
+    "expected": "37IHKXV5167L1ZS",
+    "got": null
+   },
+   {
+    "doc": "K01_gst_certificate",
+    "field": "trade_name",
+    "expected": "Vindhya Tours & Travels",
+    "got": null
+   },
+   {
+    "doc": "K01_address_proof",
+    "field": "consumer_no",
+    "expected": "9485717625",
+    "got": null
+   },
+   {
+    "doc": "K02_gst_certificate",
+    "field": "gstin",
+    "expected": "19EOGXH4115Y1ZL",
+    "got": "AVALIDDO"
+   },
+   {
+    "doc": "K02_gst_certificate",
+    "field": "legal_name",
+    "expected": "Joseph Shah (Prop. Harmony Dental Care)",
+    "got": null
+   },
+   {
+    "doc": "K02_gst_certificate",
+    "field": "trade_name",
+    "expected": "Harmony Dental Care",
+    "got": null
+   },
+   {
+    "doc": "K02_gst_certificate",
+    "field": "date_of_liability",
+    "expected": "2022-04-17",
+    "got": null
+   },
+   {
+    "doc": "K02_udyam_certificate",
+    "field": "udyam_number",
+    "expected": "UDYAM-WB-00-5053330",
+    "got": null
+   },
+   {
+    "doc": "K02_address_proof",
+    "field": "consumer_no",
+    "expected": "9790713533",
+    "got": null
+   },
+   {
+    "doc": "K03_gst_certificate",
+    "field": "gstin",
+    "expected": "27XUIXG0767D1ZP",
+    "got": null
+   },
+   {
+    "doc": "K03_gst_certificate",
+    "field": "trade_name",
+    "expected": "Ganesh Woodcraft",
+    "got": null
+   },
+   {
+    "doc": "K03_udyam_certificate",
+    "field": "udyam_number",
+    "expected": "UDYAM-MH-00-9516696",
+    "got": null
+   },
+   {
+    "doc": "K03_address_proof",
+    "field": "consumer_no",
+    "expected": "3438517928",
+    "got": null
+   },
+   {
+    "doc": "K04_udyam_certificate",
+    "field": "udyam_number",
+    "expected": "UDYAM-MH-00-6131836",
+    "got": null
+   },
+   {
+    "doc": "K04_address_proof",
+    "field": "consumer_no",
+    "expected": "7397844759",
+    "got": null
+   },
+   {
+    "doc": "K05_gst_certificate",
+    "field": "gstin",
+    "expected": "32TZAXB5481U1Z1",
+    "got": null
+   },
+   {
+    "doc": "K05_gst_certificate",
+    "field": "trade_name",
+    "expected": "Balaji Realty LLP",
+    "got": null
+   },
+   {
+    "doc": "K05_address_proof",
+    "field": "consumer_no",
+    "expected": "4294969054",
+    "got": null
+   },
+   {
+    "doc": "K06_gst_certificate",
+    "field": "gstin",
+    "expected": "08YKZXS8189L1Z0",
+    "got": null
+   },
+   {
+    "doc": "K06_gst_certificate",
+    "field": "trade_name",
+    "expected": "Saffron Unisex Salon",
+    "got": null
+   },
+   {
+    "doc": "K06_udyam_certificate",
+    "field": "udyam_number",
+    "expected": "UDYAM-RJ-00-6577157",
+    "got": null
+   },
+   {
+    "doc": "K06_address_proof",
+    "field": "consumer_no",
+    "expected": "9566781101",
+    "got": null
+   },
+   {
+    "doc": "K07_gst_certificate",
+    "field": "gstin",
+    "expected": "07CPCXN0398P1ZT",
+    "got": null
+   },
+   {
+    "doc": "K07_gst_certificate",
+    "field": "trade_name",
+    "expected": "Neelgiri Physio Clinic",
+    "got": null
+   },
+   {
+    "doc": "K07_udyam_certificate",
+    "field": "udyam_number",
+    "expected": "UDYAM-DL-00-9565547",
+    "got": null
+   },
+   {
+    "doc": "K07_address_proof",
+    "field": "consumer_no",
+    "expected": "7545812405",
+    "got": null
+   },
+   {
+    "doc": "K08_gst_certificate",
+    "field": "gstin",
+    "expected": "24XORXG9365M1Z3",
+    "got": null
+   },
+   {
+    "doc": "K08_gst_certificate",
+    "field": "trade_name",
+    "expected": "Green Leaf Legal Associates",
+    "got": null
+   },
+   {
+    "doc": "K08_udyam_certificate",
+    "field": "udyam_number",
+    "expected": "UDYAM-GJ-00-8477445",
+    "got": null
+   },
+   {
+    "doc": "K08_address_proof",
+    "field": "consumer_no",
+    "expected": "2568472785",
+    "got": null
+   },
+   {
+    "doc": "K09_gst_certificate",
+    "field": "gstin",
+    "expected": "37LDYXK0296F1ZB",
+    "got": null
+   },
+   {
+    "doc": "K09_gst_certificate",
+    "field": "trade_name",
+    "expected": "Kaveri Insurance Advisors",
+    "got": null
+   },
+   {
+    "doc": "K09_udyam_certificate",
+    "field": "udyam_number",
+    "expected": "UDYAM-AP-00-9751562",
+    "got": null
+   },
+   {
+    "doc": "K09_address_proof",
+    "field": "consumer_no",
+    "expected": "9375012581",
+    "got": null
+   },
+   {
+    "doc": "K10_gst_certificate",
+    "field": "gstin",
+    "expected": "27QHJXK0658U1ZL",
+    "got": null
+   },
+   {
+    "doc": "K10_gst_certificate",
+    "field": "trade_name",
+    "expected": "Kaveri Stays LLP",
+    "got": null
+   },
+   {
+    "doc": "K10_udyam_certificate",
+    "field": "udyam_number",
+    "expected": "UDYAM-MH-00-7183141",
+    "got": null
+   },
+   {
+    "doc": "K10_address_proof",
+    "field": "consumer_no",
+    "expected": "6910330901",
+    "got": null
+   },
+   {
+    "doc": "K11_gst_certificate",
+    "field": "gstin",
+    "expected": "03KGZXT1320R1ZZ",
+    "got": null
+   },
+   {
+    "doc": "K11_gst_certificate",
+    "field": "trade_name",
+    "expected": "Trinity Bake House Pvt Ltd",
+    "got": null
+   },
+   {
+    "doc": "K11_udyam_certificate",
+    "field": "udyam_number",
+    "expected": "UDYAM-PB-00-9719478",
+    "got": null
+   },
+   {
+    "doc": "K11_address_proof",
+    "field": "consumer_no",
+    "expected": "2710511786",
+    "got": null
+   },
+   {
+    "doc": "K12_gst_certificate",
+    "field": "gstin",
+    "expected": "37NBLXS1145E1ZU",
+    "got": null
+   },
+   {
+    "doc": "K12_gst_certificate",
+    "field": "trade_name",
+    "expected": "Star Electronics",
+    "got": null
+   },
+   {
+    "doc": "K12_udyam_certificate",
+    "field": "udyam_number",
+    "expected": "UDYAM-AP-00-5186772",
+    "got": null
+   },
+   {
+    "doc": "K12_address_proof",
+    "field": "consumer_no",
+    "expected": "6982457282",
+    "got": null
+   }
+  ],
+  "tesseract_clean": [
+   {
+    "doc": "K02_gst_certificate",
+    "field": "gstin",
+    "expected": "19EOGXH4115Y1ZL",
+    "got": "19EOGKH41SYIZ"
+   },
+   {
+    "doc": "K02_gst_certificate",
+    "field": "legal_name",
+    "expected": "Joseph Shah (Prop. Harmony Dental Care)",
+    "got": "Joseph Shah Prop, Harmony Denta} Care}"
+   },
+   {
+    "doc": "K02_gst_certificate",
+    "field": "trade_name",
+    "expected": "Harmony Dental Care",
+    "got": "Harmony Dentat Care"
+   },
+   {
+    "doc": "K03_gst_certificate",
+    "field": "gstin",
+    "expected": "27XUIXG0767D1ZP",
+    "got": "27XUIXGO0767D1ZP"
+   },
+   {
+    "doc": "K10_gst_certificate",
+    "field": "gstin",
+    "expected": "27QHJXK0658U1ZL",
+    "got": "27QHIXK0658U1ZL"
+   }
+  ],
+  "ppocr_onnx_clean": [
+   {
+    "doc": "K02_gst_certificate",
+    "field": "gstin",
+    "expected": "19EOGXH4115Y1ZL",
+    "got": null
+   },
+   {
+    "doc": "K02_gst_certificate",
+    "field": "legal_name",
+    "expected": "Joseph Shah (Prop. Harmony Dental Care)",
+    "got": "19E0GXH4115Y1ZL"
+   },
+   {
+    "doc": "K02_gst_certificate",
+    "field": "trade_name",
+    "expected": "Harmony Dental Care",
+    "got": "Joseph Shah (Prop. Harmony Dental Care)"
+   },
+   {
+    "doc": "K02_gst_certificate",
+    "field": "date_of_liability",
+    "expected": "2022-04-17",
+    "got": null
+   }
+  ],
+  "pipeline": [
+   {
+    "doc": "K02_gst_certificate",
+    "field": "legal_name",
+    "expected": "Joseph Shah (Prop. Harmony Dental Care)",
+    "got": "joseph Shah (Prop. Harmony Dental Care}"
+   },
+   {
+    "doc": "K10_gst_certificate",
+    "field": "gstin",
+    "expected": "27QHJXK0658U1ZL",
+    "got": "27QHIXK0658U1ZL"
+   }
+  ]
+ }
+}

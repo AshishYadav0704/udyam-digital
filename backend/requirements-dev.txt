@@ -1,0 +1,11 @@
+# Tests, analysis notebooks-as-scripts and model training (not needed to run the API)
+-r requirements.txt
+pytest==9.1.1
+matplotlib==3.11.2
+tabulate==0.10.0
+ImageHash==4.3.2
+catboost==1.2.10           # model comparison only
+lightgbm==4.7.0            # model comparison only
+xgboost==3.4.1             # model comparison only
+rapidocr-onnxruntime==1.2.3  # PP-OCR (PaddleOCR models on ONNX Runtime) benchmark only
+onnxruntime==1.29.0

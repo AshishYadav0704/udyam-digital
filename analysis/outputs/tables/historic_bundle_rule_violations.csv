@@ -1,0 +1,64 @@
+lead_id,product,rule
+L00086,P03,min employees
+L00207,P03,city tier
+L00242,P03,city tier
+L00355,P03,city tier
+L00355,P03,"GSTIN required, none held"
+L00627,P15,"GSTIN required, registry status Cancelled"
+L00674,P03,city tier
+L00751,P03,city tier
+L00764,P03,"GSTIN required, none held"
+L00764,P12,"GSTIN required, none held"
+L00974,P15,"GSTIN required, none held"
+L00983,P03,min employees
+L01045,P03,min employees
+L01079,P03,min employees
+L01089,P11,dependency missing
+L01104,P11,dependency missing
+L01138,P03,city tier
+L01199,P06,min employees
+L01464,P03,city tier
+L01511,P11,dependency missing
+L01739,P15,"GSTIN required, registry status Cancelled"
+L01817,P03,city tier
+L01817,P03,min employees
+L01828,P03,city tier
+L01851,P03,city tier
+L02014,P03,city tier
+L02014,P03,min employees
+L02358,P15,"GSTIN required, none held"
+L02374,P13,"GSTIN required, registry status Cancelled"
+L02588,P05,"GSTIN required, registry status Cancelled"
+L02588,P11,dependency missing
+L02841,P03,"GSTIN required, registry status Cancelled"
+L02859,P03,city tier
+L02870,P03,city tier
+L02943,P11,dependency missing
+L03010,P11,dependency missing
+L03058,P10,"GSTIN required, none held"
+L03221,P15,"GSTIN required, none held"
+L03292,P14,"GSTIN required, none held"
+L03364,P15,"GSTIN required, registry status Suspended"
+L03419,P11,dependency missing
+L03473,P03,city tier
+L03516,P03,city tier
+L03516,P03,"GSTIN required, registry status Cancelled"
+L03673,P03,city tier
+L03688,P10,"GSTIN required, registry status Suspended"
+L03774,P03,city tier
+L03774,P03,"GSTIN required, none held"
+L03842,P15,"GSTIN required, none held"
+L03872,P03,city tier
+L04070,P15,"GSTIN required, none held"
+L04272,P03,city tier
+L04350,P11,dependency missing
+L04431,P03,"GSTIN required, registry status Suspended"
+L04451,P03,city tier
+L04464,P03,city tier
+L04566,P03,city tier
+L04596,P03,city tier
+L04880,P15,"GSTIN required, registry status Cancelled"
+L04888,P12,"GSTIN required, none held"
+L04911,P03,city tier
+L04948,P03,min employees
+L04991,P11,dependency missing

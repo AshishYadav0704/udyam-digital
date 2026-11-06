@@ -1,0 +1,598 @@
+{
+ "rows": [
+  {
+   "figure": "Leads in the data",
+   "shown": "5,000",
+   "recomputed": "5,000",
+   "where": "deck 2, README",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Activated customers",
+   "shown": "368",
+   "recomputed": "368",
+   "where": "deck 2, README",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Lead-to-activation rate",
+   "shown": "7.36%",
+   "recomputed": "7.36%",
+   "where": "deck 2 & 8, README",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Every step loses more than 30% (largest step pass rate)",
+   "shown": "< 70%",
+   "recomputed": "68.3%",
+   "where": "deck 2",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Lost between needs assessment and quote acceptance",
+   "shown": "1,113",
+   "recomputed": "1,113",
+   "where": "deck 2, README",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "... of which price (too high + cheaper competitor)",
+   "shown": "621",
+   "recomputed": "621",
+   "where": "deck 2, README",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "... of which slow or complex quote",
+   "shown": "385",
+   "recomputed": "385",
+   "where": "deck 2, README",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Lost because the needs visit never happened",
+   "shown": "827",
+   "recomputed": "827",
+   "where": "deck 2",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Accepted a quote, then dropped at paperwork",
+   "shown": "273",
+   "recomputed": "273",
+   "where": "deck 2",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Lost after KYC",
+   "shown": "220",
+   "recomputed": "220",
+   "where": "deck 2",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Activated bundles breaking a catalogue eligibility rule",
+   "shown": "56",
+   "recomputed": "56",
+   "where": "deck 2",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "CAC via field sales",
+   "shown": "₹24,335",
+   "recomputed": "₹24,335",
+   "where": "deck 2",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Lowest CAC among web, WhatsApp, referral, inbound",
+   "shown": "₹4,026",
+   "recomputed": "₹4,026",
+   "where": "deck 2",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Highest CAC among web, WhatsApp, referral, inbound",
+   "shown": "6,352",
+   "recomputed": "6,352",
+   "where": "deck 2",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "6-month churn, activated customers with 4-5 status calls",
+   "shown": "23.0%",
+   "recomputed": "23.0%",
+   "where": "deck 2",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "6-month churn, activated customers with 1-2 status calls",
+   "shown": "11.9%",
+   "recomputed": "11.9%",
+   "where": "deck 2",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Blended CAC (spend / activations)",
+   "shown": "₹15,053",
+   "recomputed": "₹15,053",
+   "where": "deck 8, README",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Days lead to activation (mean)",
+   "shown": "17.6",
+   "recomputed": "17.6",
+   "where": "deck 8",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Status calls per activated customer",
+   "shown": "3.0",
+   "recomputed": "3.0",
+   "where": "deck 8, README",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Quote acceptance today (quote accepted / needs assessed)",
+   "shown": "43.6%",
+   "recomputed": "43.6%",
+   "where": "deck 8",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "NPS index of activated customers",
+   "shown": "-25",
+   "recomputed": "-25",
+   "where": "README",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Micro: leads",
+   "shown": "2,709",
+   "recomputed": "2,709",
+   "where": "deck 3",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Micro: activation",
+   "shown": "4.1%",
+   "recomputed": "4.1%",
+   "where": "deck 3",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Micro: CAC",
+   "shown": "₹20,007",
+   "recomputed": "₹20,007",
+   "where": "deck 3",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Micro: share of new MRR",
+   "shown": "6%",
+   "recomputed": "6%",
+   "where": "deck 3",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Micro: median bundle",
+   "shown": "₹2,470",
+   "recomputed": "₹2,470",
+   "where": "deck 3",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Micro: median contract",
+   "shown": "12 months",
+   "recomputed": "12 months",
+   "where": "deck 3",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Professional: leads",
+   "shown": "1,247",
+   "recomputed": "1,247",
+   "where": "deck 3",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Professional: activation",
+   "shown": "11.1%",
+   "recomputed": "11.1%",
+   "where": "deck 3",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Professional: CAC",
+   "shown": "₹10,695",
+   "recomputed": "₹10,695",
+   "where": "deck 3",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Professional: share of new MRR",
+   "shown": "21%",
+   "recomputed": "21%",
+   "where": "deck 3",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Professional: months of bundle revenue to recover CAC",
+   "shown": "1.6-month",
+   "recomputed": "1.6-month",
+   "where": "deck 3",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Professional: median bundle",
+   "shown": "₹6,575",
+   "recomputed": "₹6,575",
+   "where": "deck 3",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Professional: median contract",
+   "shown": "12 months",
+   "recomputed": "12 months",
+   "where": "deck 3",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Multi-site: leads",
+   "shown": "755",
+   "recomputed": "755",
+   "where": "deck 3",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Multi-site: activation",
+   "shown": "11.0%",
+   "recomputed": "11.0%",
+   "where": "deck 3",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Multi-site: CAC",
+   "shown": "₹15,614",
+   "recomputed": "₹15,614",
+   "where": "deck 3",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Multi-site: share of new MRR",
+   "shown": "57%",
+   "recomputed": "57%",
+   "where": "deck 3",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Multi-site: median bundle",
+   "shown": "₹28,080",
+   "recomputed": "₹28,080",
+   "where": "deck 3",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Multi-site: median contract",
+   "shown": "12 months",
+   "recomputed": "12 months",
+   "where": "deck 3",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Manufacturers: leads",
+   "shown": "289",
+   "recomputed": "289",
+   "where": "deck 3",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Manufacturers: activation",
+   "shown": "12.8%",
+   "recomputed": "12.8%",
+   "where": "deck 3",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Manufacturers: CAC",
+   "shown": "₹15,324",
+   "recomputed": "₹15,324",
+   "where": "deck 3",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Manufacturers: share of new MRR",
+   "shown": "16%",
+   "recomputed": "16%",
+   "where": "deck 3",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Manufacturers: median bundle",
+   "shown": "₹15,910",
+   "recomputed": "₹15,910",
+   "where": "deck 3",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Manufacturers: median contract",
+   "shown": "24 months",
+   "recomputed": "24 months",
+   "where": "deck 3",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Manufacturers: bundles with a leased line",
+   "shown": "73%",
+   "recomputed": "73%",
+   "where": "deck 3",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Multi-site + manufacturing share of new MRR",
+   "shown": "73%",
+   "recomputed": "73%",
+   "where": "deck 3",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Catalogue-midpoint price vs historic revenue",
+   "shown": "100.2%",
+   "recomputed": "100.2%",
+   "where": "deck 3, README",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "K11 address proof age on 15 Jul 2026",
+   "shown": "257 days",
+   "recomputed": "257 days",
+   "where": "deck 7",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "K06 certificate GSTIN fails its checksum",
+   "shown": "fails",
+   "recomputed": "fails",
+   "where": "deck 7",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Expected: activation rate",
+   "shown": "10.0%",
+   "recomputed": "10.0%",
+   "where": "deck 8",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Expected: CAC",
+   "shown": "₹11,761",
+   "recomputed": "₹11,761",
+   "where": "deck 8",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Expected: days to activate",
+   "shown": "10.8",
+   "recomputed": "10.8",
+   "where": "deck 8",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Expected: quote acceptance",
+   "shown": "49.1%",
+   "recomputed": "49.1%",
+   "where": "deck 8",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Conservative: activations per quarter",
+   "shown": "405",
+   "recomputed": "405",
+   "where": "BUSINESS_CASE",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Expected: activations per quarter",
+   "shown": "500",
+   "recomputed": "500",
+   "where": "BUSINESS_CASE",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Ambitious: activations per quarter",
+   "shown": "763",
+   "recomputed": "763",
+   "where": "BUSINESS_CASE",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Conservative: CAC",
+   "shown": "₹14,484",
+   "recomputed": "₹14,484",
+   "where": "BUSINESS_CASE",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Conservative: days to activate",
+   "shown": "13.1",
+   "recomputed": "13.1",
+   "where": "BUSINESS_CASE",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Ambitious: CAC",
+   "shown": "₹7,751",
+   "recomputed": "₹7,751",
+   "where": "BUSINESS_CASE",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  },
+  {
+   "figure": "Ambitious: days to activate",
+   "shown": "8.6",
+   "recomputed": "8.6",
+   "where": "BUSINESS_CASE",
+   "value_matches": true,
+   "found_in_document": true,
+   "ok": true
+  }
+ ],
+ "failures": 0,
+ "stage_pass_rates": [
+  0.6812,
+  0.5796,
+  0.4362,
+  0.6829,
+  0.6259
+ ],
+ "k06_gstin_masked": "08**********1Z0",
+ "specimen_gstin_checksum_failures": [
+  "K06"
+ ],
+ "specimen_gstins_checked": 11,
+ "scenarios": {
+  "conservative": {
+   "activations": 404.71,
+   "rate": 0.08,
+   "cac": 14483.51,
+   "days": 13.09,
+   "quote_acceptance": 0.45
+  },
+  "expected": {
+   "activations": 499.86,
+   "rate": 0.1,
+   "cac": 11761.23,
+   "days": 10.83,
+   "quote_acceptance": 0.49
+  },
+  "ambitious": {
+   "activations": 763.23,
+   "rate": 0.15,
+   "cac": 7750.58,
+   "days": 8.56,
+   "quote_acceptance": 0.55
+  }
+ }
+}

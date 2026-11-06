@@ -1,0 +1,82 @@
+{
+ "micro": {
+  "name": "Micro retail & services",
+  "activated": 110,
+  "median_bundle_inr": 2470.0,
+  "median_contract_months": 12.0,
+  "family_share": {
+   "fibre": 1.0,
+   "postpaid_sim": 1.0,
+   "cloud_email": 0.0,
+   "leased_line": 0.0,
+   "endpoint_security": 0.0,
+   "cloud_backup": 0.0,
+   "failover_4g5g": 0.0,
+   "cloud_pos": 0.336,
+   "cloud_cctv": 0.3,
+   "secure_wifi": 0.309,
+   "managed_firewall": 0.0,
+   "whatsapp_api": 0.255
+  }
+ },
+ "prof": {
+  "name": "Professional offices",
+  "activated": 138,
+  "median_bundle_inr": 6575.0,
+  "median_contract_months": 12.0,
+  "family_share": {
+   "fibre": 1.0,
+   "postpaid_sim": 1.0,
+   "cloud_email": 1.0,
+   "leased_line": 0.0,
+   "endpoint_security": 0.486,
+   "cloud_backup": 0.406,
+   "failover_4g5g": 0.239,
+   "cloud_pos": 0.0,
+   "cloud_cctv": 0.0,
+   "secure_wifi": 0.0,
+   "managed_firewall": 0.0,
+   "whatsapp_api": 0.0
+  }
+ },
+ "mfg": {
+  "name": "Small manufacturers",
+  "activated": 37,
+  "median_bundle_inr": 15910.0,
+  "median_contract_months": 24.0,
+  "family_share": {
+   "fibre": 0.27,
+   "postpaid_sim": 1.0,
+   "cloud_email": 1.0,
+   "leased_line": 0.73,
+   "endpoint_security": 0.432,
+   "cloud_backup": 0.0,
+   "failover_4g5g": 0.0,
+   "cloud_pos": 0.0,
+   "cloud_cctv": 0.351,
+   "secure_wifi": 0.0,
+   "managed_firewall": 0.378,
+   "whatsapp_api": 0.0
+  }
+ },
+ "multi": {
+  "name": "Small multi-site businesses",
+  "activated": 83,
+  "median_bundle_inr": 28080.0,
+  "median_contract_months": 12.0,
+  "family_share": {
+   "fibre": 1.0,
+   "postpaid_sim": 1.0,
+   "cloud_email": 0.0,
+   "leased_line": 0.0,
+   "endpoint_security": 0.0,
+   "cloud_backup": 0.0,
+   "failover_4g5g": 0.566,
+   "cloud_pos": 0.518,
+   "cloud_cctv": 0.458,
+   "secure_wifi": 0.337,
+   "managed_firewall": 0.0,
+   "whatsapp_api": 0.313
+  }
+ }
+}

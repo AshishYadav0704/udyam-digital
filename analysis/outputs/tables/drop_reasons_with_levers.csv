@@ -1,0 +1,21 @@
+drop_reason,leads,after_stage,lever,module
+Owner had no time for a visit,531,Contacted,Advisor replaces the needs-discovery visit,advisor
+Locked in with current provider,325,Contacted,"Not directly addressable (save interest, remind at contract end)",none
+Visit not scheduled by sales,296,Contacted,Advisor replaces the needs-discovery visit,advisor
+Only wanted a mobile plan,280,Contacted,Allow single-product checkout (postpaid only),advisor
+Installation delayed beyond 21 days,98,KYC complete,Tracker + install SLA alerts to ops,tracker
+Customer cancelled before install,53,KYC complete,Tracker visibility; partially addressable,tracker
+Site not feasible for fibre,41,KYC complete,Feasibility check before quote; 5G AirFiber fallback (P04),quote
+First payment failed,28,KYC complete,Payment retry / UPI autopay,tracker
+Unreachable after 3 attempts,805,Lead,Self-serve start: the owner begins the advisor from the ad/link instead of waiting for a call,digital_entry
+Not interested on first call,470,Lead,Not directly addressable,none
+Wrong or invalid number,319,Lead,OTP-verified mobile at capture,digital_entry
+Price too high,414,Needs assessed,Budget-aware right-sizing against current spend,quote
+Competitor offered cheaper plan,207,Needs assessed,"Transparent single price, Starter option",quote
+Quote too complex to understand,206,Needs assessed,"Plain-language quote, no product codes",quote
+Quote took too long to arrive,179,Needs assessed,Instant quote in the session,quote
+Decided to wait,107,Needs assessed,Saved quote + reminder; partially addressable,quote
+Missing GST or Udyam document,94,Quote accepted,Registry pre-fill; non-GST KYC path,kyc
+Found paperwork too long,79,Quote accepted,"Upload-once Smart KYC, DigiLocker pull (production)",kyc
+Authorised signatory not available,53,Quote accepted,Remote e-sign by signatory link (production),kyc
+Document details did not match,47,Quote accepted,Mismatch shown at upload with fix-it guidance,kyc

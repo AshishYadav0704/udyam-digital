@@ -1,0 +1,1000 @@
+{
+  "meta": {
+    "source": "smb_leads.csv (synthetic, Apr-Jun 2026)",
+    "leads": 5000
+  },
+  "overall": {
+    "leads": 5000,
+    "activated": 368,
+    "activation_rate": 0.0736,
+    "acquisition_spend": 5539640.0,
+    "cac": 15053.369565217392,
+    "spend_per_lead": 1107.928,
+    "mean_bundle": 12350.516304347826,
+    "median_bundle": 6900.0,
+    "mean_setup": 13879.076086956522,
+    "mrr": 4544990.0,
+    "churn_6m": 0.15217391304347827,
+    "nps_mean_score": 6.861413043478261,
+    "nps_index": -25.271739130434778,
+    "days_to_activate": 17.616847826086957,
+    "status_calls": 3.010869565217391,
+    "contract_months": 13.940217391304348,
+    "gstin_share": 0.7068,
+    "revenue_payback_months": 1.218845365996405
+  },
+  "funnel": {
+    "cumulative": {
+      "Lead": 5000,
+      "Contacted": 3406,
+      "Needs assessed": 1974,
+      "Quote accepted": 861,
+      "KYC complete": 588,
+      "Activated": 368
+    },
+    "stage_conversion": {
+      "Contacted": 0.6812,
+      "Needs assessed": 0.5795654726952437,
+      "Quote accepted": 0.43617021276595747,
+      "KYC complete": 0.6829268292682927,
+      "Activated": 0.6258503401360545
+    },
+    "lost_after_stage": {
+      "Lead": 1594,
+      "Contacted": 1432,
+      "Needs assessed": 1113,
+      "Quote accepted": 273,
+      "KYC complete": 220
+    },
+    "steepest_drop": "Quote accepted"
+  },
+  "stage_days_mean": {
+    "lead_to_contact": 1.98,
+    "contact_to_needs": 2.96,
+    "needs_to_quote_accepted": 4.07,
+    "quote_to_kyc": 3.75,
+    "kyc_to_activation": 4.8
+  },
+  "stage_days_mean_activated": {
+    "lead_to_contact": 1.95,
+    "contact_to_needs": 2.96,
+    "needs_to_quote_accepted": 4.11,
+    "quote_to_kyc": 3.8,
+    "kyc_to_activation": 4.8
+  },
+  "drop_reasons": [
+    {
+      "drop_reason": "Owner had no time for a visit",
+      "leads": 531,
+      "after_stage": "Contacted",
+      "lever": "Advisor replaces the needs-discovery visit",
+      "module": "advisor"
+    },
+    {
+      "drop_reason": "Locked in with current provider",
+      "leads": 325,
+      "after_stage": "Contacted",
+      "lever": "Not directly addressable (save interest, remind at contract end)",
+      "module": "none"
+    },
+    {
+      "drop_reason": "Visit not scheduled by sales",
+      "leads": 296,
+      "after_stage": "Contacted",
+      "lever": "Advisor replaces the needs-discovery visit",
+      "module": "advisor"
+    },
+    {
+      "drop_reason": "Only wanted a mobile plan",
+      "leads": 280,
+      "after_stage": "Contacted",
+      "lever": "Allow single-product checkout (postpaid only)",
+      "module": "advisor"
+    },
+    {
+      "drop_reason": "Installation delayed beyond 21 days",
+      "leads": 98,
+      "after_stage": "KYC complete",
+      "lever": "Tracker + install SLA alerts to ops",
+      "module": "tracker"
+    },
+    {
+      "drop_reason": "Customer cancelled before install",
+      "leads": 53,
+      "after_stage": "KYC complete",
+      "lever": "Tracker visibility; partially addressable",
+      "module": "tracker"
+    },
+    {
+      "drop_reason": "Site not feasible for fibre",
+      "leads": 41,
+      "after_stage": "KYC complete",
+      "lever": "Feasibility check before quote; 5G AirFiber fallback (P04)",
+      "module": "quote"
+    },
+    {
+      "drop_reason": "First payment failed",
+      "leads": 28,
+      "after_stage": "KYC complete",
+      "lever": "Payment retry / UPI autopay",
+      "module": "tracker"
+    },
+    {
+      "drop_reason": "Unreachable after 3 attempts",
+      "leads": 805,
+      "after_stage": "Lead",
+      "lever": "Self-serve start: the owner begins the advisor from the ad/link instead of waiting for a call",
+      "module": "digital_entry"
+    },
+    {
+      "drop_reason": "Not interested on first call",
+      "leads": 470,
+      "after_stage": "Lead",
+      "lever": "Not directly addressable",
+      "module": "none"
+    },
+    {
+      "drop_reason": "Wrong or invalid number",
+      "leads": 319,
+      "after_stage": "Lead",
+      "lever": "OTP-verified mobile at capture",
+      "module": "digital_entry"
+    },
+    {
+      "drop_reason": "Price too high",
+      "leads": 414,
+      "after_stage": "Needs assessed",
+      "lever": "Budget-aware right-sizing against current spend",
+      "module": "quote"
+    },
+    {
+      "drop_reason": "Competitor offered cheaper plan",
+      "leads": 207,
+      "after_stage": "Needs assessed",
+      "lever": "Transparent single price, Starter option",
+      "module": "quote"
+    },
+    {
+      "drop_reason": "Quote too complex to understand",
+      "leads": 206,
+      "after_stage": "Needs assessed",
+      "lever": "Plain-language quote, no product codes",
+      "module": "quote"
+    },
+    {
+      "drop_reason": "Quote took too long to arrive",
+      "leads": 179,
+      "after_stage": "Needs assessed",
+      "lever": "Instant quote in the session",
+      "module": "quote"
+    },
+    {
+      "drop_reason": "Decided to wait",
+      "leads": 107,
+      "after_stage": "Needs assessed",
+      "lever": "Saved quote + reminder; partially addressable",
+      "module": "quote"
+    },
+    {
+      "drop_reason": "Missing GST or Udyam document",
+      "leads": 94,
+      "after_stage": "Quote accepted",
+      "lever": "Registry pre-fill; non-GST KYC path",
+      "module": "kyc"
+    },
+    {
+      "drop_reason": "Found paperwork too long",
+      "leads": 79,
+      "after_stage": "Quote accepted",
+      "lever": "Upload-once Smart KYC, DigiLocker pull (production)",
+      "module": "kyc"
+    },
+    {
+      "drop_reason": "Authorised signatory not available",
+      "leads": 53,
+      "after_stage": "Quote accepted",
+      "lever": "Remote e-sign by signatory link (production)",
+      "module": "kyc"
+    },
+    {
+      "drop_reason": "Document details did not match",
+      "leads": 47,
+      "after_stage": "Quote accepted",
+      "lever": "Mismatch shown at upload with fix-it guidance",
+      "module": "kyc"
+    }
+  ],
+  "drop_by_module": {
+    "advisor": 1107,
+    "digital_entry": 1124,
+    "kyc": 273,
+    "none": 795,
+    "quote": 1154,
+    "tracker": 179
+  },
+  "needs_to_quote_breakdown": {
+    "lost": 1113,
+    "price": 621,
+    "quote_experience": 385,
+    "indecision": 107
+  },
+  "visit_friction": 827,
+  "segments": {
+    "micro": {
+      "name": "Micro retail & services",
+      "leads": 2709,
+      "activated": 110,
+      "activation_rate": 0.04060538944259875,
+      "acquisition_spend": 2200780.0,
+      "cac": 20007.090909090908,
+      "spend_per_lead": 812.3957179771133,
+      "mean_bundle": 2504.818181818182,
+      "median_bundle": 2470.0,
+      "mean_setup": 1919.090909090909,
+      "mrr": 275530.0,
+      "churn_6m": 0.22727272727272727,
+      "nps_mean_score": 7.045454545454546,
+      "nps_index": -18.181818181818183,
+      "days_to_activate": 16.645454545454545,
+      "status_calls": 3.1636363636363636,
+      "contract_months": 11.836363636363636,
+      "gstin_share": 0.5282392026578073,
+      "revenue_payback_months": 7.987442383769461,
+      "funnel": {
+        "Lead": 2709,
+        "Contacted": 1853,
+        "Needs assessed": 1008,
+        "Quote accepted": 325,
+        "KYC complete": 174,
+        "Activated": 110
+      },
+      "lead_share": 0.5418,
+      "mrr_share": 0.0606227956497154,
+      "employees_median": 3.0,
+      "sites_median": 1.0,
+      "telecom_spend_median": 900.0
+    },
+    "prof": {
+      "name": "Professional offices",
+      "leads": 1247,
+      "activated": 138,
+      "activation_rate": 0.11066559743384122,
+      "acquisition_spend": 1475870.0,
+      "cac": 10694.710144927536,
+      "spend_per_lead": 1183.5364875701684,
+      "mean_bundle": 6795.869565217391,
+      "median_bundle": 6575.0,
+      "mean_setup": 2054.3478260869565,
+      "mrr": 937830.0,
+      "churn_6m": 0.13768115942028986,
+      "nps_mean_score": 6.920289855072464,
+      "nps_index": -22.463768115942027,
+      "days_to_activate": 16.920289855072465,
+      "status_calls": 3.0652173913043477,
+      "contract_months": 12.0,
+      "gstin_share": 0.8612670408981555,
+      "revenue_payback_months": 1.5737073883326402,
+      "funnel": {
+        "Lead": 1247,
+        "Contacted": 864,
+        "Needs assessed": 538,
+        "Quote accepted": 285,
+        "KYC complete": 212,
+        "Activated": 138
+      },
+      "lead_share": 0.2494,
+      "mrr_share": 0.20634368832494682,
+      "employees_median": 14.0,
+      "sites_median": 1.0,
+      "telecom_spend_median": 2600.0
+    },
+    "mfg": {
+      "name": "Small manufacturers",
+      "leads": 289,
+      "activated": 37,
+      "activation_rate": 0.12802768166089964,
+      "acquisition_spend": 567000.0,
+      "cac": 15324.324324324325,
+      "spend_per_lead": 1961.9377162629758,
+      "mean_bundle": 19979.72972972973,
+      "median_bundle": 15910.0,
+      "mean_setup": 23302.702702702703,
+      "mrr": 739250.0,
+      "churn_6m": 0.08108108108108109,
+      "nps_mean_score": 6.45945945945946,
+      "nps_index": -45.94594594594595,
+      "days_to_activate": 20.513513513513512,
+      "status_calls": 2.864864864864865,
+      "contract_months": 19.45945945945946,
+      "gstin_share": 0.9930795847750865,
+      "revenue_payback_months": 0.7669935745688198,
+      "funnel": {
+        "Lead": 289,
+        "Contacted": 191,
+        "Needs assessed": 129,
+        "Quote accepted": 83,
+        "KYC complete": 69,
+        "Activated": 37
+      },
+      "lead_share": 0.0578,
+      "mrr_share": 0.1626516229958702,
+      "employees_median": 85.0,
+      "sites_median": 1.0,
+      "telecom_spend_median": 14300.0
+    },
+    "multi": {
+      "name": "Small multi-site businesses",
+      "leads": 755,
+      "activated": 83,
+      "activation_rate": 0.10993377483443709,
+      "acquisition_spend": 1295990.0,
+      "cac": 15614.33734939759,
+      "spend_per_lead": 1716.5430463576158,
+      "mean_bundle": 31233.493975903613,
+      "median_bundle": 28080.0,
+      "mean_setup": 45189.156626506025,
+      "mrr": 2592380.0,
+      "churn_6m": 0.10843373493975904,
+      "nps_mean_score": 6.698795180722891,
+      "nps_index": -30.120481927710845,
+      "days_to_activate": 18.771084337349397,
+      "status_calls": 2.783132530120482,
+      "contract_months": 17.49397590361446,
+      "gstin_share": 0.9827814569536424,
+      "revenue_payback_months": 0.49992285081662413,
+      "funnel": {
+        "Lead": 755,
+        "Contacted": 498,
+        "Needs assessed": 299,
+        "Quote accepted": 168,
+        "KYC complete": 133,
+        "Activated": 83
+      },
+      "lead_share": 0.151,
+      "mrr_share": 0.5703818930294676,
+      "employees_median": 71.0,
+      "sites_median": 8.0,
+      "telecom_spend_median": 9150.0
+    }
+  },
+  "product_penetration": {
+    "mfg": {
+      "P08": 1.0,
+      "P16": 1.0,
+      "P05": 0.514,
+      "P20": 0.432,
+      "P21": 0.378,
+      "P11": 0.351,
+      "P23": 0.351,
+      "P24": 0.324,
+      "P03": 0.27,
+      "P06": 0.216,
+      "P25": 0.189
+    },
+    "micro": {
+      "P07": 1.0,
+      "P01": 0.918,
+      "P19": 0.336,
+      "P22": 0.309,
+      "P23": 0.3,
+      "P15": 0.255,
+      "P18": 0.145,
+      "P04": 0.082
+    },
+    "multi": {
+      "P08": 1.0,
+      "P09": 0.566,
+      "P01": 0.518,
+      "P19": 0.518,
+      "P02": 0.482,
+      "P23": 0.458,
+      "P10": 0.458,
+      "P22": 0.337,
+      "P13": 0.337,
+      "P15": 0.313,
+      "P25": 0.145
+    },
+    "prof": {
+      "P16": 1.0,
+      "P08": 0.522,
+      "P20": 0.486,
+      "P07": 0.478,
+      "P02": 0.442,
+      "P17": 0.406,
+      "P03": 0.297,
+      "P12": 0.275,
+      "P01": 0.261,
+      "P11": 0.261,
+      "P09": 0.239,
+      "P14": 0.196
+    }
+  },
+  "quantity_patterns": {
+    "P01": {
+      "median_qty": 1.0,
+      "qty_per_site": 0.99,
+      "qty_per_employee": 0.28
+    },
+    "P02": {
+      "median_qty": 1.0,
+      "qty_per_site": 0.95,
+      "qty_per_employee": 0.14
+    },
+    "P03": {
+      "median_qty": 1.0,
+      "qty_per_site": 0.96,
+      "qty_per_employee": 0.09
+    },
+    "P04": {
+      "median_qty": 1.0,
+      "qty_per_site": 1.0,
+      "qty_per_employee": 0.43
+    },
+    "P05": {
+      "median_qty": 1.0,
+      "qty_per_site": 0.84,
+      "qty_per_employee": 0.02
+    },
+    "P06": {
+      "median_qty": 1.0,
+      "qty_per_site": 0.88,
+      "qty_per_employee": 0.02
+    },
+    "P07": {
+      "median_qty": 2.0,
+      "qty_per_site": 1.79,
+      "qty_per_employee": 0.5
+    },
+    "P08": {
+      "median_qty": 4.0,
+      "qty_per_site": 1.92,
+      "qty_per_employee": 0.16
+    },
+    "P09": {
+      "median_qty": 4.5,
+      "qty_per_site": 1.0,
+      "qty_per_employee": 0.14
+    },
+    "P10": {
+      "median_qty": 6.0,
+      "qty_per_site": 1.0,
+      "qty_per_employee": 0.13
+    },
+    "P11": {
+      "median_qty": 1.0,
+      "qty_per_site": 0.95,
+      "qty_per_employee": 0.09
+    },
+    "P12": {
+      "median_qty": 3.0,
+      "qty_per_site": 2.95,
+      "qty_per_employee": 0.31
+    },
+    "P13": {
+      "median_qty": 1.0,
+      "qty_per_site": 0.18,
+      "qty_per_employee": 0.02
+    },
+    "P14": {
+      "median_qty": 1.0,
+      "qty_per_site": 1.0,
+      "qty_per_employee": 0.12
+    },
+    "P15": {
+      "median_qty": 1.0,
+      "qty_per_site": 0.6,
+      "qty_per_employee": 0.25
+    },
+    "P16": {
+      "median_qty": 8.0,
+      "qty_per_site": 7.74,
+      "qty_per_employee": 0.58
+    },
+    "P17": {
+      "median_qty": 1.0,
+      "qty_per_site": 0.88,
+      "qty_per_employee": 0.11
+    },
+    "P18": {
+      "median_qty": 1.0,
+      "qty_per_site": 1.0,
+      "qty_per_employee": 0.5
+    },
+    "P19": {
+      "median_qty": 3.0,
+      "qty_per_site": 1.0,
+      "qty_per_employee": 0.26
+    },
+    "P20": {
+      "median_qty": 6.0,
+      "qty_per_site": 5.59,
+      "qty_per_employee": 0.48
+    },
+    "P21": {
+      "median_qty": 1.0,
+      "qty_per_site": 0.89,
+      "qty_per_employee": 0.02
+    },
+    "P22": {
+      "median_qty": 1.0,
+      "qty_per_site": 1.0,
+      "qty_per_employee": 0.27
+    },
+    "P23": {
+      "median_qty": 4.0,
+      "qty_per_site": 1.9,
+      "qty_per_employee": 0.45
+    },
+    "P24": {
+      "median_qty": 9.5,
+      "qty_per_site": 8.12,
+      "qty_per_employee": 0.18
+    },
+    "P25": {
+      "median_qty": 5.0,
+      "qty_per_site": 1.76,
+      "qty_per_employee": 0.13
+    }
+  },
+  "channels": {
+    "Channel partner": {
+      "leads": 1010,
+      "activated": 81,
+      "activation_rate": 0.0801980198019802,
+      "acquisition_spend": 1688930.0,
+      "cac": 20850.987654320987,
+      "spend_per_lead": 1672.2079207920792,
+      "mean_bundle": 10359.135802469136,
+      "median_bundle": 5110.0,
+      "mean_setup": 10018.518518518518,
+      "mrr": 839090.0,
+      "churn_6m": 0.18518518518518517,
+      "nps_mean_score": 6.753086419753086,
+      "nps_index": -29.629629629629626,
+      "days_to_activate": 17.876543209876544,
+      "status_calls": 2.950617283950617,
+      "contract_months": 13.25925925925926,
+      "gstin_share": 0.7128712871287128,
+      "revenue_payback_months": 2.012811498170637,
+      "funnel": {
+        "Lead": 1010,
+        "Contacted": 719,
+        "Needs assessed": 408,
+        "Quote accepted": 196,
+        "KYC complete": 128,
+        "Activated": 81
+      },
+      "never_contacted_share": 0.2881188118811881,
+      "segment_mix": {
+        "micro": 0.562,
+        "prof": 0.244,
+        "multi": 0.134,
+        "mfg": 0.06
+      }
+    },
+    "Field sales": {
+      "leads": 1720,
+      "activated": 125,
+      "activation_rate": 0.07267441860465117,
+      "acquisition_spend": 3041870.0,
+      "cac": 24334.96,
+      "spend_per_lead": 1768.5290697674418,
+      "mean_bundle": 12965.92,
+      "median_bundle": 7420.0,
+      "mean_setup": 14382.4,
+      "mrr": 1620740.0,
+      "churn_6m": 0.096,
+      "nps_mean_score": 6.8,
+      "nps_index": -27.999999999999996,
+      "days_to_activate": 17.832,
+      "status_calls": 2.992,
+      "contract_months": 14.064,
+      "gstin_share": 0.7040697674418605,
+      "revenue_payback_months": 1.876840208793514,
+      "funnel": {
+        "Lead": 1720,
+        "Contacted": 1263,
+        "Needs assessed": 774,
+        "Quote accepted": 319,
+        "KYC complete": 214,
+        "Activated": 125
+      },
+      "never_contacted_share": 0.26569767441860465,
+      "segment_mix": {
+        "micro": 0.52,
+        "prof": 0.26,
+        "multi": 0.162,
+        "mfg": 0.059
+      }
+    },
+    "Inbound call": {
+      "leads": 504,
+      "activated": 48,
+      "activation_rate": 0.09523809523809523,
+      "acquisition_spend": 245440.0,
+      "cac": 5113.333333333333,
+      "spend_per_lead": 486.984126984127,
+      "mean_bundle": 12508.541666666666,
+      "median_bundle": 6960.0,
+      "mean_setup": 14995.833333333334,
+      "mrr": 600410.0,
+      "churn_6m": 0.14583333333333334,
+      "nps_mean_score": 6.645833333333333,
+      "nps_index": -35.416666666666664,
+      "days_to_activate": 17.645833333333332,
+      "status_calls": 3.0416666666666665,
+      "contract_months": 13.75,
+      "gstin_share": 0.7083333333333334,
+      "revenue_payback_months": 0.40878732865874984,
+      "funnel": {
+        "Lead": 504,
+        "Contacted": 404,
+        "Needs assessed": 224,
+        "Quote accepted": 100,
+        "KYC complete": 78,
+        "Activated": 48
+      },
+      "never_contacted_share": 0.1984126984126984,
+      "segment_mix": {
+        "micro": 0.534,
+        "prof": 0.258,
+        "multi": 0.151,
+        "mfg": 0.058
+      }
+    },
+    "Referral": {
+      "leads": 413,
+      "activated": 61,
+      "activation_rate": 0.14769975786924938,
+      "acquisition_spend": 250020.0,
+      "cac": 4098.688524590164,
+      "spend_per_lead": 605.3753026634382,
+      "mean_bundle": 11076.557377049181,
+      "median_bundle": 5730.0,
+      "mean_setup": 12042.622950819672,
+      "mrr": 675670.0,
+      "churn_6m": 0.2459016393442623,
+      "nps_mean_score": 7.114754098360656,
+      "nps_index": -14.754098360655735,
+      "days_to_activate": 16.59016393442623,
+      "status_calls": 3.180327868852459,
+      "contract_months": 13.868852459016393,
+      "gstin_share": 0.6852300242130751,
+      "revenue_payback_months": 0.3700327082747495,
+      "funnel": {
+        "Lead": 413,
+        "Contacted": 326,
+        "Needs assessed": 230,
+        "Quote accepted": 111,
+        "KYC complete": 79,
+        "Activated": 61
+      },
+      "never_contacted_share": 0.2106537530266344,
+      "segment_mix": {
+        "micro": 0.567,
+        "prof": 0.245,
+        "multi": 0.143,
+        "mfg": 0.046
+      }
+    },
+    "Website form": {
+      "leads": 995,
+      "activated": 43,
+      "activation_rate": 0.04321608040201005,
+      "acquisition_spend": 273120.0,
+      "cac": 6351.627906976744,
+      "spend_per_lead": 274.4924623115578,
+      "mean_bundle": 14834.186046511628,
+      "median_bundle": 8110.0,
+      "mean_setup": 18665.116279069767,
+      "mrr": 637870.0,
+      "churn_6m": 0.11627906976744186,
+      "nps_mean_score": 7.069767441860465,
+      "nps_index": -13.953488372093027,
+      "days_to_activate": 17.41860465116279,
+      "status_calls": 2.9767441860465116,
+      "contract_months": 14.790697674418604,
+      "gstin_share": 0.7185929648241206,
+      "revenue_payback_months": 0.4281750199883989,
+      "funnel": {
+        "Lead": 995,
+        "Contacted": 546,
+        "Needs assessed": 272,
+        "Quote accepted": 117,
+        "KYC complete": 74,
+        "Activated": 43
+      },
+      "never_contacted_share": 0.45125628140703516,
+      "segment_mix": {
+        "micro": 0.547,
+        "prof": 0.234,
+        "multi": 0.161,
+        "mfg": 0.058
+      }
+    },
+    "WhatsApp campaign": {
+      "leads": 358,
+      "activated": 10,
+      "activation_rate": 0.027932960893854747,
+      "acquisition_spend": 40260.0,
+      "cac": 4026.0,
+      "spend_per_lead": 112.45810055865921,
+      "mean_bundle": 17121.0,
+      "median_bundle": 6915.0,
+      "mean_setup": 24120.0,
+      "mrr": 171210.0,
+      "churn_6m": 0.2,
+      "nps_mean_score": 7.1,
+      "nps_index": -20.0,
+      "days_to_activate": 19.8,
+      "status_calls": 2.7,
+      "contract_months": 15.6,
+      "gstin_share": 0.6927374301675978,
+      "revenue_payback_months": 0.23514981601541965,
+      "funnel": {
+        "Lead": 358,
+        "Contacted": 148,
+        "Needs assessed": 66,
+        "Quote accepted": 18,
+        "KYC complete": 15,
+        "Activated": 10
+      },
+      "never_contacted_share": 0.5865921787709497,
+      "segment_mix": {
+        "micro": 0.559,
+        "prof": 0.251,
+        "multi": 0.131,
+        "mfg": 0.059
+      }
+    }
+  },
+  "gstin_effect": {
+    "gstin_N": {
+      "leads": 1466,
+      "activated": 30,
+      "activation_rate": 0.020463847203274217,
+      "acquisition_spend": 1251830.0,
+      "cac": 41727.666666666664,
+      "spend_per_lead": 853.9085948158254,
+      "mean_bundle": 6158.333333333333,
+      "median_bundle": 3015.0,
+      "mean_setup": 5716.666666666667,
+      "mrr": 184750.0,
+      "churn_6m": 0.23333333333333334,
+      "nps_mean_score": 7.1,
+      "nps_index": -20.0,
+      "days_to_activate": 19.6,
+      "status_calls": 3.3666666666666667,
+      "contract_months": 12.4,
+      "gstin_share": 0.0,
+      "revenue_payback_months": 6.775805142083897,
+      "funnel": {
+        "Lead": 1466,
+        "Contacted": 1020,
+        "Needs assessed": 577,
+        "Quote accepted": 190,
+        "KYC complete": 47,
+        "Activated": 30
+      },
+      "kyc_completion_after_quote": 0.24736842105263157
+    },
+    "gstin_Y": {
+      "leads": 3534,
+      "activated": 338,
+      "activation_rate": 0.09564233163554046,
+      "acquisition_spend": 4287810.0,
+      "cac": 12685.828402366864,
+      "spend_per_lead": 1213.30220713073,
+      "mean_bundle": 12900.118343195267,
+      "median_bundle": 7230.0,
+      "mean_setup": 14603.550295857987,
+      "mrr": 4360240.0,
+      "churn_6m": 0.14497041420118342,
+      "nps_mean_score": 6.840236686390533,
+      "nps_index": -25.7396449704142,
+      "days_to_activate": 17.440828402366865,
+      "status_calls": 2.9792899408284024,
+      "contract_months": 14.076923076923077,
+      "gstin_share": 1.0,
+      "revenue_payback_months": 0.9833885290717942,
+      "funnel": {
+        "Lead": 3534,
+        "Contacted": 2386,
+        "Needs assessed": 1397,
+        "Quote accepted": 671,
+        "KYC complete": 541,
+        "Activated": 338
+      },
+      "kyc_completion_after_quote": 0.8062593144560357
+    }
+  },
+  "gstin_status_of_activated": {
+    "Active": 316,
+    "No GSTIN": 30,
+    "Cancelled": 18,
+    "Suspended": 4
+  },
+  "status_calls_vs_outcomes": {
+    "1": {
+      "n": 34,
+      "churn": 0.058823529411764705,
+      "nps_mean": 7.470588235294118
+    },
+    "2": {
+      "n": 84,
+      "churn": 0.14285714285714285,
+      "nps_mean": 7.190476190476191
+    },
+    "3": {
+      "n": 137,
+      "churn": 0.11678832116788321,
+      "nps_mean": 6.890510948905109
+    },
+    "4": {
+      "n": 70,
+      "churn": 0.2,
+      "nps_mean": 6.6571428571428575
+    },
+    "5": {
+      "n": 43,
+      "churn": 0.27906976744186046,
+      "nps_mean": 5.976744186046512
+    }
+  },
+  "activation_days_vs_outcomes": {
+    "<=15 days": {
+      "n": 125,
+      "nps_mean": 7.272,
+      "churn": 0.168
+    },
+    "16-21 days": {
+      "n": 183,
+      "nps_mean": 6.868852459016393,
+      "churn": 0.1366120218579235
+    },
+    ">21 days": {
+      "n": 60,
+      "nps_mean": 5.983333333333333,
+      "churn": 0.16666666666666666
+    }
+  },
+  "correlations_activated": {
+    "days_lead_to_activation": {
+      "days_lead_to_activation": 1.0,
+      "customer_follow_up_calls": 0.01,
+      "nps_score": -0.277,
+      "churn": -0.006
+    },
+    "customer_follow_up_calls": {
+      "days_lead_to_activation": 0.01,
+      "customer_follow_up_calls": 1.0,
+      "nps_score": -0.241,
+      "churn": 0.144
+    },
+    "nps_score": {
+      "days_lead_to_activation": -0.277,
+      "customer_follow_up_calls": -0.241,
+      "nps_score": 1.0,
+      "churn": 0.051
+    },
+    "churn": {
+      "days_lead_to_activation": -0.006,
+      "customer_follow_up_calls": 0.144,
+      "nps_score": 0.051,
+      "churn": 1.0
+    }
+  },
+  "price_to_spend_quintiles": {
+    "Q1 (lowest)": {
+      "n": 395.0,
+      "ratio_median": 0.12380530973451327,
+      "price_drop": 0.26329113924050634,
+      "activated": 0.2481012658227848
+    },
+    "Q2": {
+      "n": 395.0,
+      "ratio_median": 0.4370491803278688,
+      "price_drop": 0.28607594936708863,
+      "activated": 0.20506329113924052
+    },
+    "Q3": {
+      "n": 394.0,
+      "ratio_median": 0.8847300944669365,
+      "price_drop": 0.32741116751269034,
+      "activated": 0.17766497461928935
+    },
+    "Q4": {
+      "n": 395.0,
+      "ratio_median": 1.4983333333333333,
+      "price_drop": 0.3341772151898734,
+      "activated": 0.17215189873417722
+    },
+    "Q5 (highest)": {
+      "n": 395.0,
+      "ratio_median": 2.9306666666666668,
+      "price_drop": 0.3620253164556962,
+      "activated": 0.1291139240506329
+    }
+  },
+  "price_to_spend_median_by_segment": {
+    "mfg": 0.17,
+    "micro": 1.44,
+    "multi": 0.23,
+    "prof": 0.65
+  },
+  "speed_to_contact_vs_activation": {
+    "0": 0.09957924263674614,
+    "1": 0.11773700305810397,
+    "2": 0.12071535022354694,
+    "3": 0.10526315789473684,
+    "4": 0.09752321981424149
+  },
+  "existing_accel_customers": {
+    "leads": 1890,
+    "activated": 174,
+    "activation_rate": 0.09206349206349207,
+    "acquisition_spend": 2337080.0,
+    "cac": 13431.494252873563,
+    "spend_per_lead": 1236.5502645502645,
+    "mean_bundle": 13279.022988505747,
+    "median_bundle": 7455.0,
+    "mean_setup": 15278.735632183909,
+    "mrr": 2310550.0,
+    "churn_6m": 0.13793103448275862,
+    "nps_mean_score": 6.712643678160919,
+    "nps_index": -34.48275862068965,
+    "days_to_activate": 18.097701149425287,
+    "status_calls": 2.9827586206896552,
+    "contract_months": 13.931034482758621,
+    "gstin_share": 0.6968253968253968,
+    "revenue_payback_months": 1.0114821146480275
+  },
+  "non_accel": {
+    "leads": 3110,
+    "activated": 194,
+    "activation_rate": 0.062379421221864954,
+    "acquisition_spend": 3202560.0,
+    "cac": 16508.0412371134,
+    "spend_per_lead": 1029.7620578778135,
+    "mean_bundle": 11517.731958762886,
+    "median_bundle": 5770.0,
+    "mean_setup": 12623.711340206186,
+    "mrr": 2234440.0,
+    "churn_6m": 0.16494845360824742,
+    "nps_mean_score": 6.994845360824742,
+    "nps_index": -17.010309278350512,
+    "days_to_activate": 17.185567010309278,
+    "status_calls": 3.036082474226804,
+    "contract_months": 13.948453608247423,
+    "gstin_share": 0.7128617363344052,
+    "revenue_payback_months": 1.4332718712518573
+  },
+  "historic_rule_violations": {
+    "bundles": 56,
+    "by_rule": {
+      "city tier": 24,
+      "GSTIN required, none held": 12,
+      "dependency missing": 9,
+      "min employees": 8,
+      "GSTIN required, registry status Cancelled": 7,
+      "GSTIN required, registry status Suspended": 3
+    },
+    "by_product": {
+      "P03": 37,
+      "P15": 9,
+      "P11": 9,
+      "P12": 2,
+      "P10": 2,
+      "P06": 1,
+      "P13": 1,
+      "P05": 1,
+      "P14": 1
+    }
+  },
+  "price_realisation": {
+    "mean_position_in_range": 0.4807371703900718,
+    "median_position_in_range": 0.46525941490221434,
+    "midpoint_vs_actual_mrr": 1.0017799819141515,
+    "floor_vs_actual_mrr": 0.8605035434621419
+  }
+}

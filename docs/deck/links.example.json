@@ -1,0 +1,5 @@
+{
+  "_how": "Copy to links.json, put the full https:// links to the code repository and the 3-minute demo video, then rebuild: node docs/deck/build_deck.js seven && node docs/deck/build_deck.js eight (and export PDFs). Without links.json the deck is built without the links line.",
+  "repo": "https://github.com/your-account/udyam-digital",
+  "video": "https://youtu.be/your-video-id"
+}

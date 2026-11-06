@@ -1,0 +1,31 @@
+# dependencies / builds
+node_modules/
+frontend/dist/
+__pycache__/
+*.pyc
+.pytest_cache/
+catboost_info/
+
+# runtime state: encrypted documents, keys, databases (never commit)
+storage/
+*.db
+*.db-wal
+*.db-shm
+.env
+.env.*
+!.env.example
+
+# local tooling and environments
+.vscode/
+.idea/
+*.log
+.venv/
+venv/
+.DS_Store
+
+# test output (red-team and accessibility scripts)
+test-results/
+
+# deck QA renders (regenerate with docs/deck/build_deck.js + soffice)
+docs/deck/render/
+docs/screenshots/responsive/ui_audit.json

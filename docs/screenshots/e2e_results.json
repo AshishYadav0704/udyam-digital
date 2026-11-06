@@ -1,0 +1,197 @@
+{
+  "base": "http://127.0.0.1:5173",
+  "passed": 38,
+  "failed": 0,
+  "results": [
+    {
+      "name": " landing shows live catalogue prices",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": " onboarding lists documents",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": " advisor extracted 4 slots from one sentence",
+      "ok": true,
+      "detail": "{\"bt\":\"Dental clinic\",\"exp\":\"gstin\"}"
+    },
+    {
+      "name": " GSTIN verified against mock registry",
+      "ok": true,
+      "detail": "Active"
+    },
+    {
+      "name": " plan recommended",
+      "ok": true,
+      "detail": "recommended"
+    },
+    {
+      "name": " plan shows a reason per product",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": " add-on switch re-prices and restores",
+      "ok": true,
+      "detail": "₹3,943 -> ₹4,442 -> back"
+    },
+    {
+      "name": " quote saved with validity",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": " payment failure handled with retry",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": " consent required before documents",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": " KYC decision for K02",
+      "ok": true,
+      "detail": "manual_review"
+    },
+    {
+      "name": " call-back request recorded",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": " no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "k06- landing shows live catalogue prices",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "k06- onboarding lists documents",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "k06- advisor extracted 4 slots from one sentence",
+      "ok": true,
+      "detail": "{\"bt\":\"Dental clinic\",\"exp\":\"gstin\"}"
+    },
+    {
+      "name": "k06- GSTIN verified against mock registry",
+      "ok": true,
+      "detail": "Active"
+    },
+    {
+      "name": "k06- plan recommended",
+      "ok": true,
+      "detail": "recommended"
+    },
+    {
+      "name": "k06- plan shows a reason per product",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "k06- add-on switch re-prices and restores",
+      "ok": true,
+      "detail": "₹3,943 -> ₹4,442 -> back"
+    },
+    {
+      "name": "k06- quote saved with validity",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "k06- payment failure handled with retry",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "k06- consent required before documents",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "k06- KYC decision for K06",
+      "ok": true,
+      "detail": "manual_review"
+    },
+    {
+      "name": "k06- low-confidence OCR read is flagged",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "k06- call-back request recorded",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "k06- no JS errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "hi advisor understood Devanagari",
+      "ok": true,
+      "detail": "{\"bt\":\"Kirana store\",\"city\":\"Lucknow\",\"emp\":2,\"exp\":\"gstin\"}"
+    },
+    {
+      "name": "hi plan recommended in Hindi",
+      "ok": true,
+      "detail": "recommended"
+    },
+    {
+      "name": "form validation shows required errors",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "unserviceable city routes to partner call-back",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ops overview shows baseline 7.36%",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "lead panel explains score and route",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "lead follow-up saved with history",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "lead search finds the lead by reference",
+      "ok": true,
+      "detail": "L02320"
+    },
+    {
+      "name": "call-back number revealed on demand",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "audit log records reveal",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "KYC reviewer nav has no Leads",
+      "ok": true,
+      "detail": ""
+    }
+  ]
+}

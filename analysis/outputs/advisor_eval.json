@@ -1,0 +1,320 @@
+{
+ "offline": {
+  "field_accuracy": 0.9849624060150376,
+  "fields_scored": 133,
+  "case_accuracy": 0.95,
+  "cases": 40,
+  "per_field": {
+   "business_type": {
+    "correct": 39,
+    "total": 39,
+    "accuracy": 1.0
+   },
+   "city": {
+    "correct": 38,
+    "total": 38,
+    "accuracy": 1.0
+   },
+   "employees": {
+    "correct": 25,
+    "total": 25,
+    "accuracy": 1.0
+   },
+   "has_gstin": {
+    "correct": 8,
+    "total": 8,
+    "accuracy": 1.0
+   },
+   "sites": {
+    "correct": 8,
+    "total": 9,
+    "accuracy": 0.8888888888888888
+   },
+   "needs": {
+    "correct": 11,
+    "total": 12,
+    "accuracy": 0.9166666666666666
+   },
+   "gstin_status": {
+    "correct": 2,
+    "total": 2,
+    "accuracy": 1.0
+   }
+  },
+  "by_language": {
+   "en": {
+    "all_correct": 24,
+    "cases": 25
+   },
+   "hinglish": {
+    "all_correct": 5,
+    "cases": 5
+   },
+   "hi": {
+    "all_correct": 9,
+    "cases": 10
+   }
+  },
+  "unasked_fills": 3,
+  "ms_per_utterance": 39.41,
+  "rows": [
+   {
+    "id": "en01",
+    "lang": "en",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "en02",
+    "lang": "en",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "en03",
+    "lang": "en",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "en04",
+    "lang": "en",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "en05",
+    "lang": "en",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "en06",
+    "lang": "en",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "en07",
+    "lang": "en",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "en08",
+    "lang": "en",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "en09",
+    "lang": "en",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "en10",
+    "lang": "en",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "en11",
+    "lang": "en",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "en12",
+    "lang": "en",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "en13",
+    "lang": "en",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "en14",
+    "lang": "en",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "en15",
+    "lang": "en",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "en16",
+    "lang": "en",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "en17",
+    "lang": "en",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "en18",
+    "lang": "en",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "en19",
+    "lang": "en",
+    "all_correct": false,
+    "wrong": [
+     {
+      "field": "sites",
+      "expected": 3,
+      "got": null
+     }
+    ]
+   },
+   {
+    "id": "en20",
+    "lang": "en",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "hg01",
+    "lang": "hinglish",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "hg02",
+    "lang": "hinglish",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "hg03",
+    "lang": "hinglish",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "hg04",
+    "lang": "hinglish",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "hg05",
+    "lang": "hinglish",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "hi01",
+    "lang": "hi",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "hi02",
+    "lang": "hi",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "hi03",
+    "lang": "hi",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "hi04",
+    "lang": "hi",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "hi05",
+    "lang": "hi",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "hi06",
+    "lang": "hi",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "hi07",
+    "lang": "hi",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "hi08",
+    "lang": "hi",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "hi09",
+    "lang": "hi",
+    "all_correct": false,
+    "wrong": [
+     {
+      "field": "needs",
+      "expected": [
+       "cloud_email",
+       "backup_storage"
+      ],
+      "got": [
+       "cloud_email"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "hi10",
+    "lang": "hi",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "ed01",
+    "lang": "en",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "ed02",
+    "lang": "en",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "ed03",
+    "lang": "en",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "ed04",
+    "lang": "en",
+    "all_correct": true,
+    "wrong": []
+   },
+   {
+    "id": "ed05",
+    "lang": "en",
+    "all_correct": true,
+    "wrong": []
+   }
+  ]
+ }
+}

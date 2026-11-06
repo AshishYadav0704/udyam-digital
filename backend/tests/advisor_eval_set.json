@@ -1,0 +1,456 @@
+{
+ "description": "Held-out utterances for the advisor's information extraction (first message of a conversation, no slot expected). Written to mirror how owners describe their business in English, Hinglish and Hindi. Expected values use the advisor's canonical vocabulary. Used by scripts/eval_advisor.py to compare the offline extractor with any configured LLM provider. Not used to tune the rules after it was written.",
+ "fields": [
+  "business_type",
+  "city",
+  "employees",
+  "sites",
+  "has_gstin",
+  "gstin_status",
+  "needs"
+ ],
+ "cases": [
+  {
+   "id": "en01",
+   "lang": "en",
+   "text": "I have a kirana store in Lucknow, just me and my wife",
+   "expect": {
+    "business_type": "Kirana store",
+    "city": "Lucknow",
+    "employees": 2
+   }
+  },
+  {
+   "id": "en02",
+   "lang": "en",
+   "text": "Salon in Jaipur with 4 staff, no GST",
+   "expect": {
+    "business_type": "Salon",
+    "city": "Jaipur",
+    "employees": 4,
+    "has_gstin": false
+   }
+  },
+  {
+   "id": "en03",
+   "lang": "en",
+   "text": "We are a pharmacy in Patna, 3 people, one shop, GST registered",
+   "expect": {
+    "business_type": "Pharmacy",
+    "city": "Patna",
+    "employees": 3,
+    "sites": 1,
+    "has_gstin": true
+   }
+  },
+  {
+   "id": "en04",
+   "lang": "en",
+   "text": "dental clinic in Kochi, 6 employees",
+   "expect": {
+    "business_type": "Dental clinic",
+    "city": "Kochi",
+    "employees": 6
+   }
+  },
+  {
+   "id": "en05",
+   "lang": "en",
+   "text": "CA firm in Delhi, 12 employees, one office, need email and backup",
+   "expect": {
+    "business_type": "CA firm",
+    "city": "Delhi",
+    "employees": 12,
+    "sites": 1,
+    "needs": [
+     "cloud_email",
+     "backup_storage"
+    ]
+   }
+  },
+  {
+   "id": "en06",
+   "lang": "en",
+   "text": "I run a coaching centre in Kota with 15 teachers",
+   "expect": {
+    "business_type": "Coaching centre",
+    "city": "Kota"
+   }
+  },
+  {
+   "id": "en07",
+   "lang": "en",
+   "text": "We have a chain of 6 restaurants in Bengaluru, about 90 staff",
+   "expect": {
+    "business_type": "Restaurant chain",
+    "city": "Bengaluru",
+    "employees": 90,
+    "sites": 6
+   }
+  },
+  {
+   "id": "en08",
+   "lang": "en",
+   "text": "Electronics stores, 8 outlets across Pune, we want one dashboard for all branches",
+   "expect": {
+    "business_type": "Electronics retail chain",
+    "city": "Pune",
+    "sites": 8,
+    "needs": [
+     "multi_site_mgmt"
+    ]
+   }
+  },
+  {
+   "id": "en09",
+   "lang": "en",
+   "text": "Auto parts manufacturing unit in Ludhiana, 120 workers, need a leased line",
+   "expect": {
+    "business_type": "Auto-parts unit",
+    "city": "Ludhiana",
+    "employees": 120,
+    "needs": [
+     "dedicated_line"
+    ]
+   }
+  },
+  {
+   "id": "en10",
+   "lang": "en",
+   "text": "textile unit in Surat, 60 workers, we need CCTV",
+   "expect": {
+    "business_type": "Textile unit",
+    "city": "Surat",
+    "employees": 60,
+    "needs": [
+     "cctv"
+    ]
+   }
+  },
+  {
+   "id": "en11",
+   "lang": "en",
+   "text": "small boutique in Indore, no GSTIN, only me",
+   "expect": {
+    "business_type": "Boutique",
+    "city": "Indore",
+    "employees": 1,
+    "has_gstin": false
+   }
+  },
+  {
+   "id": "en12",
+   "lang": "en",
+   "text": "our GST registration was cancelled last year, we run a sweet shop in Agra",
+   "expect": {
+    "business_type": "Sweet shop",
+    "city": "Agra",
+    "has_gstin": true,
+    "gstin_status": "Cancelled"
+   }
+  },
+  {
+   "id": "en13",
+   "lang": "en",
+   "text": "gym chain with 4 branches in Hyderabad",
+   "expect": {
+    "business_type": "Gym chain",
+    "city": "Hyderabad",
+    "sites": 4
+   }
+  },
+  {
+   "id": "en14",
+   "lang": "en",
+   "text": "mobile repair shop, 2 people, Nagpur, need billing software",
+   "expect": {
+    "business_type": "Mobile repair shop",
+    "city": "Nagpur",
+    "employees": 2,
+    "needs": [
+     "billing_pos"
+    ]
+   }
+  },
+  {
+   "id": "en15",
+   "lang": "en",
+   "text": "law office in Mumbai, 9 lawyers and staff, need call management",
+   "expect": {
+    "business_type": "Law office",
+    "city": "Mumbai",
+    "needs": [
+     "cloud_telephony"
+    ]
+   }
+  },
+  {
+   "id": "en16",
+   "lang": "en",
+   "text": "diagnostic lab in Chennai with 25 employees and 2 collection centres",
+   "expect": {
+    "business_type": "Diagnostic lab",
+    "city": "Chennai",
+    "employees": 25,
+    "sites": 2
+   }
+  },
+  {
+   "id": "en17",
+   "lang": "en",
+   "text": "printing press in Sivakasi, 40 workers",
+   "expect": {
+    "business_type": "Printing press",
+    "employees": 40
+   }
+  },
+  {
+   "id": "en18",
+   "lang": "en",
+   "text": "We are a travel agency in Visakhapatnam, team of 5",
+   "expect": {
+    "business_type": "Travel agency",
+    "city": "Visakhapatnam",
+    "employees": 5
+   }
+  },
+  {
+   "id": "en19",
+   "lang": "en",
+   "text": "budget hotel group, 3 hotels in Goa, guests need wifi",
+   "expect": {
+    "business_type": "Budget hotel group",
+    "sites": 3,
+    "needs": [
+     "wifi_guest"
+    ]
+   }
+  },
+  {
+   "id": "en20",
+   "lang": "en",
+   "text": "hardware store in Muzaffarpur, me and my brother",
+   "expect": {
+    "business_type": "Hardware store",
+    "city": "Muzaffarpur",
+    "employees": 2
+   }
+  },
+  {
+   "id": "hg01",
+   "lang": "hinglish",
+   "text": "meri kirana ki dukaan hai Kanpur mein, 2 log kaam karte hain",
+   "expect": {
+    "business_type": "Kirana store",
+    "city": "Kanpur",
+    "employees": 2
+   }
+  },
+  {
+   "id": "hg02",
+   "lang": "hinglish",
+   "text": "salon hai Bhopal mein, GST nahi hai",
+   "expect": {
+    "business_type": "Salon",
+    "city": "Bhopal",
+    "has_gstin": false
+   }
+  },
+  {
+   "id": "hg03",
+   "lang": "hinglish",
+   "text": "humara medical store hai Varanasi me, 3 staff, CCTV chahiye",
+   "expect": {
+    "business_type": "Pharmacy",
+    "city": "Varanasi",
+    "employees": 3,
+    "needs": [
+     "cctv"
+    ]
+   }
+  },
+  {
+   "id": "hg04",
+   "lang": "hinglish",
+   "text": "coaching institute hai Patna mein, 2 branch hain, 20 teachers",
+   "expect": {
+    "business_type": "Coaching centre",
+    "city": "Patna",
+    "sites": 2
+   }
+  },
+  {
+   "id": "hg05",
+   "lang": "hinglish",
+   "text": "factory hai Rajkot mein, 80 workers, internet aur machine monitoring chahiye",
+   "expect": {
+    "business_type": "Manufacturing unit",
+    "city": "Rajkot",
+    "employees": 80,
+    "needs": [
+     "machine_iot"
+    ]
+   }
+  },
+  {
+   "id": "hi01",
+   "lang": "hi",
+   "text": "मेरी किराना की दुकान है लखनऊ में, हम दो लोग हैं",
+   "expect": {
+    "business_type": "Kirana store",
+    "city": "Lucknow",
+    "employees": 2
+   }
+  },
+  {
+   "id": "hi02",
+   "lang": "hi",
+   "text": "पटना में मेरी दवाई की दुकान है, 3 लोग काम करते हैं",
+   "expect": {
+    "business_type": "Pharmacy",
+    "city": "Patna",
+    "employees": 3
+   }
+  },
+  {
+   "id": "hi03",
+   "lang": "hi",
+   "text": "जयपुर में सैलून है, GST नहीं है",
+   "expect": {
+    "business_type": "Salon",
+    "city": "Jaipur",
+    "has_gstin": false
+   }
+  },
+  {
+   "id": "hi04",
+   "lang": "hi",
+   "text": "हमारी 5 दुकानें हैं दिल्ली में, सबमें CCTV चाहिए",
+   "expect": {
+    "business_type": "Retail chain",
+    "city": "Delhi",
+    "sites": 5,
+    "needs": [
+     "cctv"
+    ]
+   }
+  },
+  {
+   "id": "hi05",
+   "lang": "hi",
+   "text": "इंदौर में क्लिनिक है, 4 कर्मचारी",
+   "expect": {
+    "business_type": "Clinic",
+    "city": "Indore",
+    "employees": 4
+   }
+  },
+  {
+   "id": "hi06",
+   "lang": "hi",
+   "text": "कानपुर में कारखाना है, 50 मज़दूर",
+   "expect": {
+    "business_type": "Manufacturing unit",
+    "city": "Kanpur",
+    "employees": 50
+   }
+  },
+  {
+   "id": "hi07",
+   "lang": "hi",
+   "text": "मेरा GST रद्द हो गया है, बेकरी चलाता हूँ आगरा में",
+   "expect": {
+    "business_type": "Bakery",
+    "city": "Agra",
+    "has_gstin": true,
+    "gstin_status": "Cancelled"
+   }
+  },
+  {
+   "id": "hi08",
+   "lang": "hi",
+   "text": "सिर्फ़ मैं हूँ, स्टेशनरी की दुकान है वाराणसी में",
+   "expect": {
+    "business_type": "Stationery shop",
+    "city": "Varanasi",
+    "employees": 1
+   }
+  },
+  {
+   "id": "hi09",
+   "lang": "hi",
+   "text": "पुणे में CA फर्म है, 10 लोग, ईमेल और बैकअप चाहिए",
+   "expect": {
+    "business_type": "CA firm",
+    "city": "Pune",
+    "employees": 10,
+    "needs": [
+     "cloud_email",
+     "backup_storage"
+    ]
+   }
+  },
+  {
+   "id": "hi10",
+   "lang": "hi",
+   "text": "हम 6 लोग हैं, रेस्टोरेंट है भोपाल में, ग्राहकों के लिए वाई-फाई चाहिए",
+   "expect": {
+    "business_type": [
+     "Restaurant chain",
+     "Restaurant / cafe"
+    ],
+    "city": "Bhopal",
+    "employees": 6,
+    "needs": [
+     "wifi_guest"
+    ]
+   }
+  },
+  {
+   "id": "ed01",
+   "lang": "en",
+   "text": "my GSTIN is 27XUIXG0767D1ZP, furniture workshop in Nagpur",
+   "expect": {
+    "business_type": "Furniture workshop",
+    "city": "Nagpur",
+    "has_gstin": true
+   }
+  },
+  {
+   "id": "ed02",
+   "lang": "en",
+   "text": "we only want mobile connections for 6 people in Delhi",
+   "expect": {
+    "city": "Delhi"
+   }
+  },
+  {
+   "id": "ed03",
+   "lang": "en",
+   "text": "optician shop in Darbhanga, 2 people",
+   "expect": {
+    "business_type": "Optician",
+    "city": "Darbhanga",
+    "employees": 2
+   }
+  },
+  {
+   "id": "ed04",
+   "lang": "en",
+   "text": "we spend about Rs 2,500 a month on internet, small salon in Mysuru",
+   "expect": {
+    "business_type": "Salon",
+    "city": "Mysuru"
+   }
+  },
+  {
+   "id": "ed05",
+   "lang": "en",
+   "text": "no need for CCTV, just fast internet for my architecture studio in Ahmedabad",
+   "expect": {
+    "business_type": "Architecture studio",
+    "city": "Ahmedabad"
+   }
+  }
+ ]
+}

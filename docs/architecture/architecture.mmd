@@ -1,0 +1,54 @@
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Carlito, Calibri, Arial, sans-serif", "fontSize": "15px", "primaryColor": "#ffffff", "primaryBorderColor": "#1b2a4a", "primaryTextColor": "#1b2a4a", "lineColor": "#46597f", "clusterBkg": "#f3f5f8", "clusterBorder": "#dde2ea"}}}%%
+%% Same components and connections as architecture.svg (drawn by build_svg.py).
+flowchart TB
+  subgraph PEOPLE["People"]
+    OWN["Business owner<br/>phone browser, Hindi or English"]
+    QR["WhatsApp / partner QR link<br/>carries source and partner code"]
+    STAFF["Sales, partner, KYC reviewer, admin"]
+  end
+  subgraph WEB["Web app"]
+    CUST["Customer journey: 15 mobile-first screens"]
+    OPS["Back office (loaded only for staff)"]
+  end
+  subgraph API["API: one FastAPI service, separate modules"]
+    SEC["Security layer: OTP + JWT, five roles, advisor session secret,<br/>rate limits, security headers, PII-scrubbed logs, audit trail"]
+    ADV["Advisor<br/>EN, Hinglish, Hindi; optional LLM, text only"]
+    ENG["Deterministic engine<br/>rules, recommendation, price, GST, install plan"]
+    KYC["Smart KYC<br/>upload checks, image clean-up, OCR, cross-checks, decision"]
+    ORD["Orders and privacy<br/>re-price at checkout, payments, tracker, consent, call-backs"]
+    RTE["Routing + lead score<br/>calibrated logistic regression"]
+  end
+  subgraph STORE["Storage"]
+    CAT[("Catalogue rules")]
+    DOCS[("Encrypted documents")]
+    DB[("Database")]
+    MODEL[("Lead model")]
+  end
+  subgraph OUT["Outside services"]
+    LLMP["LLM provider API<br/>only if a key is set"]
+    REG["MOCK GST + Udyam registry<br/>synthetic CSVs, not a government API"]
+    PROD["Production integrations, not called today:<br/>GSP, Udyam source, DigiLocker / Entity Locker,<br/>eSign, SMS gateway, UPI AutoPay"]
+  end
+  OWN --> CUST
+  QR --> CUST
+  STAFF --> OPS
+  CUST -->|HTTPS JSON| SEC
+  OPS -->|HTTPS JSON| SEC
+  SEC --> ADV & ENG & KYC & ORD & RTE
+  ADV --> ENG
+  ORD --> RTE
+  ENG --> CAT
+  KYC --> DOCS
+  ORD --> DB
+  RTE --> MODEL
+  ADV -.->|text only, PII masked| LLMP
+  KYC --> REG
+  REG -.->|swap adapter| PROD
+  classDef decide fill:#1b2a4a,stroke:#1b2a4a,color:#ffffff;
+  classDef mock fill:#fff4d6,stroke:#8a5a00,color:#1b2a4a,stroke-dasharray: 5 4;
+  classDef later fill:#ffffff,stroke:#8a5a00,color:#5b6475,stroke-dasharray: 3 3;
+  classDef opt fill:#ffffff,stroke:#46597f,color:#1b2a4a,stroke-dasharray: 5 4;
+  class ENG,KYC decide;
+  class REG mock;
+  class PROD later;
+  class LLMP opt;

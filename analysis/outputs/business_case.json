@@ -1,0 +1,340 @@
+{
+  "baseline": {
+    "leads": 5000,
+    "activations": 368,
+    "activation_rate": 0.0736,
+    "new_mrr": 4544990.0,
+    "spend": 5539640.0,
+    "cac": 15053.369565217392,
+    "days_to_activate": 17.616847826086957,
+    "churn_6m": 0.15217391304347827,
+    "step_pass_rates": [
+      0.6812,
+      0.5795654726952437,
+      0.43617021276595747,
+      0.6829268292682927,
+      0.6258503401360545
+    ]
+  },
+  "assumptions": {
+    "adoption": {
+      "conservative": 0.4,
+      "expected": 0.6,
+      "ambitious": 0.8
+    },
+    "downstream_discount": {
+      "conservative": 0.6,
+      "expected": 0.75,
+      "ambitious": 0.9
+    },
+    "price_bundle_factor": 0.65,
+    "mobile_only_lines": 3,
+    "p07_list_price": 349.0,
+    "recovery": {
+      "Unreachable after 3 attempts": {
+        "rates": {
+          "conservative": 0.05,
+          "expected": 0.1,
+          "ambitious": 0.2
+        },
+        "why": "Owner can start from the WhatsApp / SMS link instead of waiting for a call"
+      },
+      "Wrong or invalid number": {
+        "rates": {
+          "conservative": 0.1,
+          "expected": 0.2,
+          "ambitious": 0.3
+        },
+        "why": "Mobile verified by OTP when the owner starts; affects future capture only"
+      },
+      "Not interested on first call": {
+        "rates": {
+          "conservative": 0.0,
+          "expected": 0.0,
+          "ambitious": 0.0
+        },
+        "why": "No lever"
+      },
+      "Owner had no time for a visit": {
+        "rates": {
+          "conservative": 0.15,
+          "expected": 0.25,
+          "ambitious": 0.4
+        },
+        "why": "Needs discovery happens in a 3-minute chat; no visit"
+      },
+      "Visit not scheduled by sales": {
+        "rates": {
+          "conservative": 0.2,
+          "expected": 0.35,
+          "ambitious": 0.5
+        },
+        "why": "No visit needed for standard bundles"
+      },
+      "Only wanted a mobile plan": {
+        "rates": {
+          "conservative": 0.15,
+          "expected": 0.3,
+          "ambitious": 0.45
+        },
+        "why": "Mobile-only checkout is allowed (small bundle)"
+      },
+      "Locked in with current provider": {
+        "rates": {
+          "conservative": 0.0,
+          "expected": 0.0,
+          "ambitious": 0.0
+        },
+        "why": "No lever (saved interest only)"
+      },
+      "Quote too complex to understand": {
+        "rates": {
+          "conservative": 0.25,
+          "expected": 0.4,
+          "ambitious": 0.55
+        },
+        "why": "Plain-language quote with reasons per product"
+      },
+      "Quote took too long to arrive": {
+        "rates": {
+          "conservative": 0.3,
+          "expected": 0.5,
+          "ambitious": 0.65
+        },
+        "why": "Quote is instant and server-priced in the session"
+      },
+      "Decided to wait": {
+        "rates": {
+          "conservative": 0.1,
+          "expected": 0.15,
+          "ambitious": 0.25
+        },
+        "why": "Saved quote held 15 days; reminder"
+      },
+      "Price too high": {
+        "rates": {
+          "conservative": 0.03,
+          "expected": 0.07,
+          "ambitious": 0.12
+        },
+        "why": "Right-sizing against current spend; lowest-cost option shown"
+      },
+      "Competitor offered cheaper plan": {
+        "rates": {
+          "conservative": 0.0,
+          "expected": 0.05,
+          "ambitious": 0.1
+        },
+        "why": "Transparent single price; Starter option"
+      },
+      "Missing GST or Udyam document": {
+        "rates": {
+          "conservative": 0.25,
+          "expected": 0.4,
+          "ambitious": 0.55
+        },
+        "why": "Checklist up front; registry verifies the number; non-GST path"
+      },
+      "Found paperwork too long": {
+        "rates": {
+          "conservative": 0.25,
+          "expected": 0.4,
+          "ambitious": 0.55
+        },
+        "why": "Phone upload, instant feedback; DigiLocker pull in production"
+      },
+      "Authorised signatory not available": {
+        "rates": {
+          "conservative": 0.1,
+          "expected": 0.2,
+          "ambitious": 0.35
+        },
+        "why": "Remote e-sign link (production integration)"
+      },
+      "Document details did not match": {
+        "rates": {
+          "conservative": 0.2,
+          "expected": 0.35,
+          "ambitious": 0.5
+        },
+        "why": "Mismatch explained at upload; human review instead of rejection"
+      },
+      "Installation delayed beyond 21 days": {
+        "rates": {
+          "conservative": 0.1,
+          "expected": 0.2,
+          "ambitious": 0.3
+        },
+        "why": "Dependency-aware schedule; stuck-order alerts"
+      },
+      "Customer cancelled before install": {
+        "rates": {
+          "conservative": 0.05,
+          "expected": 0.1,
+          "ambitious": 0.2
+        },
+        "why": "Tracker visibility"
+      },
+      "Site not feasible for fibre": {
+        "rates": {
+          "conservative": 0.4,
+          "expected": 0.6,
+          "ambitious": 0.75
+        },
+        "why": "5G AirFiber fallback offered automatically"
+      },
+      "First payment failed": {
+        "rates": {
+          "conservative": 0.4,
+          "expected": 0.6,
+          "ambitious": 0.75
+        },
+        "why": "Retry with another method; order kept"
+      }
+    },
+    "hosting_per_quarter": 300000,
+    "per_digital_session": 2.0,
+    "per_kyc_case": 60.0,
+    "manual_review": {
+      "share": 0.35,
+      "minutes": 10,
+      "rate_per_hour": 400
+    },
+    "one_time_build": 7500000,
+    "contribution_margin": 0.35,
+    "field_shift_share": {
+      "conservative": 0.15,
+      "expected": 0.3,
+      "ambitious": 0.45
+    },
+    "digital_days_to_activate": 6.298913043478261
+  },
+  "scenarios": {
+    "conservative": {
+      "activations": 404.71037766776425,
+      "activation_rate": 0.08094207553355284,
+      "uplift": 1.0997564610537072,
+      "new_mrr": 4938586.410016791,
+      "delta_mrr": 393596.41001679096,
+      "platform_cost_quarter": 321987.1278963451,
+      "cac": 14483.510805122683,
+      "cac_with_field_shift": 13319.25471713811,
+      "field_leads_shifted": 323.25,
+      "field_saving_quarter": 471186.5210702299,
+      "days_to_activate": 13.089673913043478,
+      "year1_incremental_revenue": 9281033.55525301,
+      "year1_incremental_contribution": 3248361.7443385534,
+      "year1_cost": 8787948.51158538,
+      "build_payback_months": 23,
+      "by_segment": {
+        "micro": {
+          "activations": 124.54044772335271,
+          "mrr": 311154.42212178436
+        },
+        "prof": {
+          "activations": 149.70310535660795,
+          "mrr": 1015523.326994264
+        },
+        "multi": {
+          "activations": 89.91601702118429,
+          "mrr": 2803150.2400054852
+        },
+        "mfg": {
+          "activations": 40.550807566619305,
+          "mrr": 808758.4208952575
+        }
+      },
+      "step_pass_rates": [
+        0.6869719999999999,
+        0.5987843276333665,
+        0.4543609331345943,
+        0.6854809039537486,
+        0.6317838673308644
+      ]
+    },
+    "expected": {
+      "activations": 499.8598245419983,
+      "activation_rate": 0.09997196490839966,
+      "uplift": 1.3583147406032563,
+      "new_mrr": 5850701.819090212,
+      "delta_mrr": 1305711.8190902118,
+      "platform_cost_quarter": 339323.9883027999,
+      "cac": 11761.225246876884,
+      "cac_with_field_shift": 9875.95062412856,
+      "field_leads_shifted": 646.5,
+      "field_saving_quarter": 942373.0421404598,
+      "days_to_activate": 10.82608695652174,
+      "year1_incremental_revenue": 30788784.902661406,
+      "year1_incremental_contribution": 10776074.715931492,
+      "year1_cost": 8857295.9532112,
+      "build_payback_months": 11,
+      "by_segment": {
+        "micro": {
+          "activations": 166.99379491658775,
+          "mrr": 411503.7667490423
+        },
+        "prof": {
+          "activations": 178.16168241928196,
+          "mrr": 1197147.2360546452
+        },
+        "multi": {
+          "activations": 106.59200173219976,
+          "mrr": 3290850.99383944
+        },
+        "mfg": {
+          "activations": 48.11234547392885,
+          "mrr": 951199.8224470845
+        }
+      },
+      "step_pass_rates": [
+        0.698516,
+        0.6320529490229925,
+        0.49081681443102515,
+        0.7059434099012305,
+        0.6535203067928959
+      ]
+    },
+    "ambitious": {
+      "activations": 763.2305020067921,
+      "activation_rate": 0.15264610040135843,
+      "uplift": 2.073995929366283,
+      "new_mrr": 8153765.348029693,
+      "delta_mrr": 3608775.3480296927,
+      "platform_cost_quarter": 375842.71128949267,
+      "cac": 7750.5847784328325,
+      "cac_with_field_shift": 5898.510523677603,
+      "field_leads_shifted": 969.75,
+      "field_saving_quarter": 1413559.5632106897,
+      "days_to_activate": 8.5625,
+      "year1_incremental_revenue": 85095199.66659403,
+      "year1_incremental_contribution": 29783319.883307908,
+      "year1_cost": 9003370.84515797,
+      "build_payback_months": 6,
+      "by_segment": {
+        "micro": {
+          "activations": 294.69850250335213,
+          "mrr": 704300.1382872973
+        },
+        "prof": {
+          "activations": 252.27955393346184,
+          "mrr": 1654554.2214221077
+        },
+        "multi": {
+          "activations": 149.87237433272568,
+          "mrr": 4512713.469742642
+        },
+        "mfg": {
+          "activations": 66.38007123725244,
+          "mrr": 1282197.5185776455
+        }
+      },
+      "step_pass_rates": [
+        0.722272,
+        0.6898634639706751,
+        0.554727737115813,
+        0.7708326439197294,
+        0.7164432744885028
+      ]
+    }
+  }
+}

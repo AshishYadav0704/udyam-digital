@@ -1,0 +1,514 @@
+{
+  "data_dir": "data/raw",
+  "inventory": [
+    {
+      "file": "README.md",
+      "bytes": 4238,
+      "sha256": "9eadd69ff1174519"
+    },
+    {
+      "file": "kyc_documents/K01_address_proof.png",
+      "bytes": 133366,
+      "sha256": "fc2e7e233d68ecb6"
+    },
+    {
+      "file": "kyc_documents/K01_gst_certificate.png",
+      "bytes": 152921,
+      "sha256": "f30b5b4eca3069db"
+    },
+    {
+      "file": "kyc_documents/K01_signatory_id.png",
+      "bytes": 40957,
+      "sha256": "5f12a98907119f5d"
+    },
+    {
+      "file": "kyc_documents/K01_udyam_certificate.png",
+      "bytes": 129502,
+      "sha256": "abe10634040d7d4b"
+    },
+    {
+      "file": "kyc_documents/K02_address_proof.png",
+      "bytes": 131222,
+      "sha256": "087d0626f76cea87"
+    },
+    {
+      "file": "kyc_documents/K02_gst_certificate.png",
+      "bytes": 207526,
+      "sha256": "1d86666687927981"
+    },
+    {
+      "file": "kyc_documents/K02_signatory_id.png",
+      "bytes": 39774,
+      "sha256": "e6d1251036a5aec2"
+    },
+    {
+      "file": "kyc_documents/K02_udyam_certificate.png",
+      "bytes": 131409,
+      "sha256": "81f5406c274d8de5"
+    },
+    {
+      "file": "kyc_documents/K03_address_proof.png",
+      "bytes": 132072,
+      "sha256": "88c0f3d6113240bd"
+    },
+    {
+      "file": "kyc_documents/K03_gst_certificate.png",
+      "bytes": 149864,
+      "sha256": "4e41f486c166d0fe"
+    },
+    {
+      "file": "kyc_documents/K03_signatory_id.png",
+      "bytes": 39539,
+      "sha256": "d5d8a2684764d588"
+    },
+    {
+      "file": "kyc_documents/K03_udyam_certificate.png",
+      "bytes": 130841,
+      "sha256": "619440964425c580"
+    },
+    {
+      "file": "kyc_documents/K04_address_proof.png",
+      "bytes": 133653,
+      "sha256": "38000bc5e1b78105"
+    },
+    {
+      "file": "kyc_documents/K04_gst_certificate.png",
+      "bytes": 331027,
+      "sha256": "d65d3c966aed745a"
+    },
+    {
+      "file": "kyc_documents/K04_signatory_id.png",
+      "bytes": 37544,
+      "sha256": "91e94e630050e47e"
+    },
+    {
+      "file": "kyc_documents/K04_udyam_certificate.png",
+      "bytes": 130643,
+      "sha256": "02522751a7e096bc"
+    },
+    {
+      "file": "kyc_documents/K05_address_proof.png",
+      "bytes": 129484,
+      "sha256": "f02c19643334f34c"
+    },
+    {
+      "file": "kyc_documents/K05_gst_certificate.png",
+      "bytes": 146529,
+      "sha256": "39551a5031ba4ae8"
+    },
+    {
+      "file": "kyc_documents/K05_signatory_id.png",
+      "bytes": 37269,
+      "sha256": "6c0020e20e7badcc"
+    },
+    {
+      "file": "kyc_documents/K06_address_proof.png",
+      "bytes": 131076,
+      "sha256": "012f0ae7ae8751ad"
+    },
+    {
+      "file": "kyc_documents/K06_gst_certificate.png",
+      "bytes": 148975,
+      "sha256": "1364d92a676f59c6"
+    },
+    {
+      "file": "kyc_documents/K06_signatory_id.png",
+      "bytes": 38627,
+      "sha256": "3187c6c19d9a19fb"
+    },
+    {
+      "file": "kyc_documents/K06_udyam_certificate.png",
+      "bytes": 130145,
+      "sha256": "1063764bfeb9843c"
+    },
+    {
+      "file": "kyc_documents/K07_address_proof.png",
+      "bytes": 131347,
+      "sha256": "7fe2c84aba606a2a"
+    },
+    {
+      "file": "kyc_documents/K07_gst_certificate.png",
+      "bytes": 149579,
+      "sha256": "261f470ecf7ef233"
+    },
+    {
+      "file": "kyc_documents/K07_signatory_id.png",
+      "bytes": 38565,
+      "sha256": "d1b2add7452522b5"
+    },
+    {
+      "file": "kyc_documents/K07_udyam_certificate.png",
+      "bytes": 129453,
+      "sha256": "f3c289913441e8e9"
+    },
+    {
+      "file": "kyc_documents/K08_address_proof.png",
+      "bytes": 132482,
+      "sha256": "47cd90e1c0f3842c"
+    },
+    {
+      "file": "kyc_documents/K08_gst_certificate.png",
+      "bytes": 151913,
+      "sha256": "6b3d66c7f107b758"
+    },
+    {
+      "file": "kyc_documents/K08_signatory_id.png",
+      "bytes": 41020,
+      "sha256": "9040d41d65a9ba42"
+    },
+    {
+      "file": "kyc_documents/K08_udyam_certificate.png",
+      "bytes": 130625,
+      "sha256": "ac959a6ab58749a3"
+    },
+    {
+      "file": "kyc_documents/K09_address_proof.png",
+      "bytes": 135298,
+      "sha256": "5ca04d6c3c5c9d3c"
+    },
+    {
+      "file": "kyc_documents/K09_gst_certificate.png",
+      "bytes": 153369,
+      "sha256": "200ff261394fbce9"
+    },
+    {
+      "file": "kyc_documents/K09_signatory_id.png",
+      "bytes": 39300,
+      "sha256": "dfeb0f24fa74b950"
+    },
+    {
+      "file": "kyc_documents/K09_udyam_certificate.png",
+      "bytes": 133730,
+      "sha256": "f0e1bb788506d27c"
+    },
+    {
+      "file": "kyc_documents/K10_address_proof.png",
+      "bytes": 130103,
+      "sha256": "fa323e2bf8383e80"
+    },
+    {
+      "file": "kyc_documents/K10_gst_certificate.png",
+      "bytes": 148244,
+      "sha256": "2331a714627354cf"
+    },
+    {
+      "file": "kyc_documents/K10_signatory_id.png",
+      "bytes": 38252,
+      "sha256": "fa85f282f5e64a22"
+    },
+    {
+      "file": "kyc_documents/K10_udyam_certificate.png",
+      "bytes": 130440,
+      "sha256": "901d6ccf3e8d3b1d"
+    },
+    {
+      "file": "kyc_documents/K11_address_proof.png",
+      "bytes": 133089,
+      "sha256": "303250a5472f8f65"
+    },
+    {
+      "file": "kyc_documents/K11_gst_certificate.png",
+      "bytes": 151705,
+      "sha256": "36b9aecc4ea59b8c"
+    },
+    {
+      "file": "kyc_documents/K11_signatory_id.png",
+      "bytes": 38867,
+      "sha256": "41a0b9aef1fd5878"
+    },
+    {
+      "file": "kyc_documents/K11_udyam_certificate.png",
+      "bytes": 131346,
+      "sha256": "f16aed63c80030d5"
+    },
+    {
+      "file": "kyc_documents/K12_address_proof.png",
+      "bytes": 133633,
+      "sha256": "7d735237fc648f17"
+    },
+    {
+      "file": "kyc_documents/K12_gst_certificate.png",
+      "bytes": 150792,
+      "sha256": "380df624f93cc556"
+    },
+    {
+      "file": "kyc_documents/K12_signatory_id.png",
+      "bytes": 38662,
+      "sha256": "970754fe9d9573b5"
+    },
+    {
+      "file": "kyc_documents/K12_udyam_certificate.png",
+      "bytes": 132450,
+      "sha256": "31917be127618bfe"
+    },
+    {
+      "file": "mock_gstin_registry.csv",
+      "bytes": 628438,
+      "sha256": "53f18df9ef8298df",
+      "rows": 3534,
+      "cols": 8
+    },
+    {
+      "file": "mock_udyam_registry.csv",
+      "bytes": 271446,
+      "sha256": "588ae3503180dd34",
+      "rows": 2723,
+      "cols": 8
+    },
+    {
+      "file": "product_catalogue.csv",
+      "bytes": 4080,
+      "sha256": "5110529705bda36f",
+      "rows": 25,
+      "cols": 16
+    },
+    {
+      "file": "smb_leads.csv",
+      "bytes": 1517309,
+      "sha256": "b2521e8cedcf3b57",
+      "rows": 5000,
+      "cols": 40
+    }
+  ],
+  "kyc": {
+    "applicants": [
+      "K01",
+      "K02",
+      "K03",
+      "K04",
+      "K05",
+      "K06",
+      "K07",
+      "K08",
+      "K09",
+      "K10",
+      "K11",
+      "K12"
+    ],
+    "documents_per_applicant": {
+      "K01": 4,
+      "K02": 4,
+      "K03": 4,
+      "K04": 4,
+      "K05": 3,
+      "K06": 4,
+      "K07": 4,
+      "K08": 4,
+      "K09": 4,
+      "K10": 4,
+      "K11": 4,
+      "K12": 4
+    },
+    "missing": {
+      "K05": [
+        "udyam_certificate"
+      ]
+    }
+  },
+  "checks": [
+    {
+      "area": "inventory",
+      "check": "47 KYC images for 12 applicants",
+      "result": "PASS",
+      "detail": "47 images, 12 applicants; incomplete sets: {'K05': ['udyam_certificate']}"
+    },
+    {
+      "area": "inventory",
+      "check": "README row counts",
+      "result": "PASS",
+      "detail": "leads=5000, catalogue=25, gstin=3534, udyam=2723"
+    },
+    {
+      "area": "leads",
+      "check": "lead_id unique",
+      "result": "PASS",
+      "detail": "0 duplicates"
+    },
+    {
+      "area": "leads",
+      "check": "created_date within Apr-Jun 2026",
+      "result": "PASS",
+      "detail": "2026-04-01 to 2026-06-30"
+    },
+    {
+      "area": "leads",
+      "check": "stage dates in chronological order",
+      "result": "PASS",
+      "detail": "0 out-of-order pairs"
+    },
+    {
+      "area": "leads",
+      "check": "stage_reached consistent with populated stage dates",
+      "result": "PASS",
+      "detail": "0 inconsistent rows"
+    },
+    {
+      "area": "leads",
+      "check": "outcome consistent with stage_reached",
+      "result": "PASS",
+      "detail": "Activated <=> stage Activated"
+    },
+    {
+      "area": "leads",
+      "check": "days_lead_to_activation = activated - created",
+      "result": "PASS",
+      "detail": "mean 17.6 days (README: 17.6)"
+    },
+    {
+      "area": "leads",
+      "check": "post-activation fields only populated for activated leads",
+      "result": "PASS",
+      "detail": "0 violations"
+    },
+    {
+      "area": "leads",
+      "check": "drop_reason present for every dropped lead",
+      "result": "PASS",
+      "detail": "21 distinct reasons, each tied to one stage"
+    },
+    {
+      "area": "leads",
+      "check": "has_gstin flag matches gstin field",
+      "result": "PASS",
+      "detail": "3534 leads with GSTIN"
+    },
+    {
+      "area": "leads",
+      "check": "has_udyam flag matches udyam_number field",
+      "result": "PASS",
+      "detail": "2723 leads with Udyam"
+    },
+    {
+      "area": "leads",
+      "check": "no stage dates after the 15 Jul 2026 reference date",
+      "result": "WARN",
+      "detail": "18 leads have KYC/activation dates after 2026-07-15 (latest 2026-07-26); kept as-is - the reference date is only used for document-age checks"
+    },
+    {
+      "area": "leads",
+      "check": "no duplicate business+city leads",
+      "result": "PASS",
+      "detail": "0 duplicates"
+    },
+    {
+      "area": "registry",
+      "check": "every lead GSTIN exists in mock GST registry",
+      "result": "PASS",
+      "detail": "3534 of 3534 found; registry has no orphan rows: True"
+    },
+    {
+      "area": "registry",
+      "check": "every lead Udyam number exists in mock Udyam registry",
+      "result": "PASS",
+      "detail": "registry has no orphan rows: True"
+    },
+    {
+      "area": "registry",
+      "check": "GSTIN checksum valid for every registry record",
+      "result": "PASS",
+      "detail": "mod-36 checksum, 3,534/3,534"
+    },
+    {
+      "area": "registry",
+      "check": "GSTIN PAN 4th character is X (synthetic convention)",
+      "result": "PASS",
+      "detail": "README: accept X - no real taxpayer can match"
+    },
+    {
+      "area": "registry",
+      "check": "GSTIN state code consistent with lead state",
+      "result": "PASS",
+      "detail": "one code per state"
+    },
+    {
+      "area": "registry",
+      "check": "Udyam numbers use district code 00 (synthetic convention)",
+      "result": "PASS",
+      "detail": "README: 00 does not exist in reality"
+    },
+    {
+      "area": "registry",
+      "check": "GST registry status mix",
+      "result": "PASS",
+      "detail": {
+        "Active": 3266,
+        "Cancelled": 167,
+        "Suspended": 101
+      }
+    },
+    {
+      "area": "catalogue",
+      "check": "activated bundles comply with catalogue eligibility rules",
+      "result": "WARN",
+      "detail": "56 of 368 activated bundles (15.2%) break at least one rule: {'city tier': 24, 'GSTIN required, none held': 12, 'dependency missing': 9, 'min employees': 8, 'GSTIN required, registry status Cancelled': 7, 'GSTIN required, registry status Suspended': 3}"
+    },
+    {
+      "area": "catalogue",
+      "check": "realised bundle value inside catalogue price range",
+      "result": "PASS",
+      "detail": "position in [min,max] range: mean 0.48, median 0.47"
+    },
+    {
+      "area": "catalogue",
+      "check": "one-time setup = sum(catalogue setup x quantity)",
+      "result": "PASS",
+      "detail": "exact for all 368"
+    },
+    {
+      "area": "catalogue",
+      "check": "contract months = longest product minimum term in bundle",
+      "result": "PASS",
+      "detail": "exact for all 368"
+    },
+    {
+      "area": "catalogue",
+      "check": "25 products, unique IDs, min<=max price",
+      "result": "PASS",
+      "detail": "P01-P25"
+    },
+    {
+      "area": "funnel",
+      "check": "cumulative funnel reproduces README",
+      "result": "PASS",
+      "detail": "{'Lead': 5000, 'Contacted': 3406, 'Needs assessed': 1974, 'Quote accepted': 861, 'KYC complete': 588, 'Activated': 368}"
+    }
+  ],
+  "funnel_cumulative": {
+    "Lead": 5000,
+    "Contacted": 3406,
+    "Needs assessed": 1974,
+    "Quote accepted": 861,
+    "KYC complete": 588,
+    "Activated": 368
+  },
+  "stage_reached_counts_last_stage": {
+    "Lead": 1594,
+    "Contacted": 1432,
+    "Needs assessed": 1113,
+    "Quote accepted": 273,
+    "KYC complete": 220,
+    "Activated": 368
+  },
+  "historic_rule_violations": {
+    "bundles": 56,
+    "by_rule": {
+      "city tier": 24,
+      "GSTIN required, none held": 12,
+      "dependency missing": 9,
+      "min employees": 8,
+      "GSTIN required, registry status Cancelled": 7,
+      "GSTIN required, registry status Suspended": 3
+    },
+    "by_product": {
+      "P03": 37,
+      "P15": 9,
+      "P11": 9,
+      "P12": 2,
+      "P10": 2,
+      "P06": 1,
+      "P13": 1,
+      "P05": 1,
+      "P14": 1
+    }
+  }
+}

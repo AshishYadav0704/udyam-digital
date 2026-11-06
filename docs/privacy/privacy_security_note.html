@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Privacy and security note - Project Udyam Digital</title>
+<style>
+  @page { size: A4; margin: 9mm 10mm 8mm; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Carlito, Calibri, "Segoe UI", Arial, sans-serif; color: #1b2a4a; font-size: 8.05pt; line-height: 1.24; }
+  h1 { font-size: 15.5pt; margin: 0; letter-spacing: 0; }
+  .meta { color: #46597f; margin: 1.5pt 0 4pt; font-size: 8.4pt; }
+  .disclaimer { background: #fff4d6; padding: 3.5pt 6pt; border-radius: 3pt; margin-bottom: 5pt; }
+  h2 { font-size: 9.6pt; margin: 5pt 0 2pt; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { text-align: left; vertical-align: top; padding: 1.5pt 3.5pt; border-bottom: 0.6pt solid #dde2ea; }
+  th { color: #5b6475; font-weight: 600; font-size: 7.8pt; border-bottom: 0.9pt solid #1b2a4a; }
+  td:first-child { font-weight: 700; }
+  .when { white-space: nowrap; }
+  .now { color: #1f7a4d; font-weight: 700; }
+  .later { color: #8a5a00; font-weight: 700; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 9pt; }
+  ul { margin: 0; padding-left: 10pt; }
+  li { margin: 0 0 1.2pt; }
+  .mock { display: inline-block; background: #fff4d6; color: #8a5a00; font-weight: 700; padding: 0 3pt; border-radius: 2pt; font-size: 7.6pt; }
+  .foot { margin-top: 5pt; color: #5b6475; font-size: 7.4pt; }
+</style>
+</head>
+<body>
+<h1>Privacy and security note: Project Udyam Digital</h1>
+<div class="meta">Team Shankhnad, MMMUT Gorakhpur. Airtel SYNC 2026, Enterprise Track A. November 2026. Covers the prototype in this repository.</div>
+<div class="disclaimer">Prototype on the competition's synthetic data. Accel Business is the case study's fictional operator. This note describes how the
+system is designed and what is implemented; it is not legal advice and not a claim of compliance or certification. Counsel must review it before launch.</div>
+
+<h2>1. What personal data the journey uses, why, and for how long</h2>
+<table>
+  <tr><th style="width:17%">Data</th><th style="width:21%">Purpose</th><th style="width:36%">How it is held</th><th>Kept for</th></tr>
+  <tr><td>Mobile number</td><td>OTP login; call-backs the owner asks for</td><td>Keyed hash for lookup; encrypted copy that sales can reveal only for a requested call (audited)</td><td>Life of the account</td></tr>
+  <tr><td>Business profile</td><td>Advice, eligibility, price</td><td>Database; GSTIN and Udyam masked in every screen, API response and log line</td><td>12 months after last activity (policy; not yet automated)</td></tr>
+  <tr><td>KYC documents</td><td>Verify the business, signatory and address before activation</td><td>File signature, size and pixel checks; re-encoded to strip metadata; encrypted at rest; every view audited</td><td>180 days after activation; 30 days after rejection or cancellation; 180 days if abandoned; at once on withdrawal (automated)</td></tr>
+  <tr><td>Verification result</td><td>Record of the check, as licence conditions require</td><td>Decision, reasons and masked identifiers; no images</td><td>Period set by telecom licence conditions (to confirm with Legal)</td></tr>
+  <tr><td>Consent records</td><td>Proof of consent and withdrawal</td><td>Purpose, notice version, language, time; withdrawals timestamped</td><td>Life of the account plus the limitation period (to confirm)</td></tr>
+  <tr><td>Audit log</td><td>Accountability, investigation</td><td>Who did what and when; identifiers scrubbed before writing</td><td>1 year (policy)</td></tr>
+</table>
+
+<h2>2. DPDP Act 2023 and DPDP Rules 2025: when each duty applies and what we built</h2>
+<table>
+  <tr><th style="width:20%">Duty</th><th style="width:15%">Applies</th><th style="width:40%">In the prototype</th><th>Before launch</th></tr>
+  <tr><td>Notice (s.5; Rule 3)</td><td class="when"><span class="later">13-14 May 2027</span></td><td>Itemised per purpose: data, reason, recipients, retention, rights, grievance contact; Hindi and English; versioned</td><td>Legal review; more languages</td></tr>
+  <tr><td>Consent (s.6)</td><td class="when"><span class="later">13-14 May 2027</span></td><td>KYC consent required before any upload; optional purposes off by default; withdrawal as easy as giving, from "My privacy"</td><td>Consent Manager link optional (Rule 4 from Nov 2026)</td></tr>
+  <tr><td>Purpose limits, minimisation</td><td class="when"><span class="later">13-14 May 2027</span></td><td>Registry lookups send only the GSTIN or Udyam number; an LLM, if configured, gets masked text only, never documents</td><td>Data processing agreements with every vendor</td></tr>
+  <tr><td>Security safeguards (s.8(5); Rule 6)</td><td class="when"><span class="later">13-14 May 2027</span></td><td>Encryption at rest, 5 roles with partner scoping, audit trail, rate limits, upload hardening, masked logs; production will not start without its keys</td><td>Keys in a KMS, staff SSO with MFA, penetration test, monitoring</td></tr>
+  <tr><td>Breach intimation (s.8(6); Rule 7)</td><td class="when"><span class="later">13-14 May 2027</span></td><td>Audit trail and document-view log support investigation</td><td>Incident runbook: Board and affected users without delay, detailed report within 72 hours</td></tr>
+  <tr><td>Erasure (s.8(7); Rule 8)</td><td class="when"><span class="later">13-14 May 2027</span></td><td>Deletion dates per the notice; purge at start-up and via an admin job</td><td>Daily scheduler; erasure-on-request workflow</td></tr>
+  <tr><td>Rights (s.11-14)</td><td class="when"><span class="later">13-14 May 2027</span></td><td>"My privacy": data summary, consents, withdrawal; grievance contact in the notice</td><td>Correction and erasure requests with an SLA; nominee</td></tr>
+  <tr><td>Board and definitions (Rules 1, 2, 17-21)</td><td class="when"><span class="now">in force since Nov 2025</span></td><td colspan="2">No direct product duty; the design anticipates the duties above so nothing needs rework in May 2027.</td></tr>
+</table>
+
+<div class="cols">
+  <div>
+    <h2>3. Integrations: what is mocked, what production needs</h2>
+    <table>
+      <tr><th>Capability</th><th>Prototype</th><th>Production route</th></tr>
+      <tr><td>GSTIN</td><td><span class="mock">MOCK</span> local registry from synthetic CSV</td><td>Licensed GST Suvidha Provider (GSTN search)</td></tr>
+      <tr><td>Udyam</td><td><span class="mock">MOCK</span> local registry</td><td>Authorised data source or aggregator; no official public API found</td></tr>
+      <tr><td>DigiLocker, Entity Locker</td><td>Not built</td><td>Requester access via API Setu (approval needed)</td></tr>
+      <tr><td>eSign</td><td>Not built</td><td>CCA-empanelled eSign Service Provider</td></tr>
+      <tr><td>OTP</td><td>Shown on screen (demo)</td><td>SMS gateway with DLT-registered template</td></tr>
+      <tr><td>Payments</td><td>Simulated, with failure path</td><td>Payment gateway, UPI AutoPay mandate</td></tr>
+    </table>
+    <p class="foot" style="margin-top:2pt">No government website is scraped; mocks share the production adapters' interface.</p>
+  </div>
+  <div>
+    <h2>4. Telecom KYC and decisions about people</h2>
+    <ul>
+      <li>DoT business connections: each end user of a business mobile line completes their own KYC before the SIM is activated; the tracker shows this step. The prototype does not perform end-user KYC.</li>
+      <li>No automatic rejection: unclear or conflicting documents go to a KYC reviewer, who records a reason. OCR and models never approve or reject alone.</li>
+      <li>The lead score only orders call queues; it never changes price, eligibility or KYC. Capacity is reserved for non-GST micro businesses the model ranks low.</li>
+    </ul>
+    <h2>5. Open items before launch</h2>
+    <ul>
+      <li>Data protection impact review; vendor DPAs; data residency in India</li>
+      <li>KMS-managed keys and rotation; SSO with MFA; VAPT</li>
+      <li>Automated purge for leads and audit log; correction and erasure workflow</li>
+      <li>Re-measure OCR and fraud checks on real phone photos</li>
+    </ul>
+  </div>
+</div>
+<div class="foot">Dates: DPDP Rules 2025 notified 13-14 Nov 2025 (Rules 1, 2, 17-21 at once; Rule 4 after one year; Rules 3, 5-16, 22-23 after 18 months; Mondaq, PIB). DoT business connections: Aug 2023, May 2024. Code: backend/app/consent.py, retention.py, security.py, kyc/.</div>
+</body>
+</html>
